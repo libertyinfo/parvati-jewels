@@ -4,11 +4,11 @@ import logo from '../assets/icons/logo.svg';
 function Footer() {
   return (
     <footer className="bg-[#0C758C] w-full text-white">
-      <div className="container grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 py-16">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 2xl:gap-10 xl:gap-8 gap-4 xl:py-16 py-12">
         
         <div className="col-span-1 md:col-span-1 flex flex-col items-start">
-          <img src={logo} alt="Parvati Jewels Logo" className="brightness-0 invert mb-6" />
-          <p className="text-[14px] 2xl:text-[18px] text-white/90 font-light pr-4">
+          <img src={logo} alt="Parvati Jewels Logo" className="brightness-0 invert mb-6 w-[200px] xl:w-[230px]" />
+          <p className="text-[12px] xl:text-[14px] 2xl:text-[18px] text-white/90 font-light pr-4">
             Lorem ipsum dolor sit amet, elit, sed do incididunt ut labore Neque aliquam morbi cursus risus at ultrices. A vitae sapien pellentesque. Phasellus vestibulum.
           </p>
         </div>

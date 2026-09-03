@@ -50,23 +50,22 @@ function Home() {
   return (
     <div className="w-full flex flex-col pb-20">
 
-      {/* Hero Section */}
-      <section className="relative h-[794px] flex items-center overflow-hidden bg-[#227b8e]">
+      <section className="relative 3xl:h-[745px] 2xl:h-[794px] xl:h-[675px] h-[498px] flex items-center overflow-hidden bg-[#227b8e]">
         <div className="absolute left-0 top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
-        <div className="absolute">
+        <div className="absolute w-[590px] xl:w-[800px] 2xl:w-[941px] 3xl:w-[59%]">
             <img src={heroImg} alt="" />
         </div>
-        <div className="container mx-auto">
+        <div className="container mx-auto px-6">
           <div className="justify-end px-6 flex">
             <div className="w-full md:w-1/2 flex flex-col items-center text-white mt-12 md:mt-0">
-            <p className="text-[28px] mb-7 uppercase">New Arrivals</p>
-            <h1 className="font-bellefair text-[56px] md:text-[64px] 2xl:text-[92px] leading-[100%] mb-7 text-center">
+            <p className="xl:text-[28px] text-[25px] mb-7 uppercase">New Arrivals</p>
+            <h1 className="font-bellefair text-[56px] xl:text-[64px] 2xl:text-[92px] leading-[100%] mb-7 text-center">
               TIMELESS<br />BRILLIANCE
             </h1>
-            <p className="text-[15px] md:text-[20px] mb-8 font-light text-center">
+            <p className="text-[18px] xl:text-[20px] mb-8 font-light text-center">
               Life is made up of many gorgeous moments—big and small. Celebrate a life well lived in the most radiant way.
             </p>
-            <button className="bg-white text-[#0C758C] px-8 py-3 text-[16px] font-medium hover:bg-transparent hover:text-white hover:border hover:border-white transition-colors border border-transparent cursor-pointer">
+            <button className="bg-white text-[#0C758C] xl:px-8 px-6 xl:py-3 py-2 text-[16px] font-medium hover:bg-transparent hover:text-white hover:border hover:border-white transition-colors border border-transparent cursor-pointer">
               Inquiry
             </button>
           </div>
@@ -80,51 +79,51 @@ function Home() {
           <h2 className="font-bellefair text-[#0C758C] text-[40px] xl:text-[48px] mb-2 text-center uppercase">
             Shop By Category
           </h2>
-          <p className="text-[#3D3D3D] text-[15px] xl:text-[20px] mb-14 text-center">
+          <p className="text-[#3D3D3D] text-[15px] xl:text-[20px] xl:mb-14 mb-12 text-center">
             So that you don't run out of options to choose from!
           </p>
           
-          <div className="flex flex-col md:flex-row gap-[30px] justify-center">
+          <div className="flex flex-col md:flex-row 3xl:gap-[20px] 2xl:gap-[30px] gap-[20px] justify-center">
 
-            <div className="flex flex-col gap-[30px]">
-              <div className="flex flex-row gap-[30px]">
-                <div className="bg-[#d7edf4] rounded-lg relative overflow-hidden flex justify-end w-[253px]">
+            <div className="flex flex-col 3xl:gap-[20px] 2xl:gap-[30px] gap-[20px]">
+              <div className="flex flex-row 3xl:gap-[20px] 2xl:gap-[30px] gap-[20px]">
+                <div className="bg-[#d7edf4] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[240px] xl:w-[235px] 2xl:w-[253px]">
                   <img src={classyEarrings} alt="" />
-                  <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-[#3D3D3D] z-10 absolute bottom-2 right-17">Classy Earrings</span>
+                  <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-[#3D3D3D] z-10 absolute xl:bottom-2 bottom-1 xl:right-17 right-10">Classy Earrings</span>
                 </div>
                 
-                <div className="bg-[#d8dcde] rounded-lg relative overflow-hidden flex justify-end w-[253px]">
+                <div className="bg-[#d8dcde] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[240px] xl:w-[235px] 2xl:w-[253px]">
                   <img src={stuningRings} alt="" />
-                  <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-[#3D3D3D] z-10 absolute bottom-2 right-17">Stunning Rings</span>
+                  <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-[#3D3D3D] z-10 absolute xl:bottom-2 bottom-1 xl:right-17 right-10">Stunning Rings</span>
                 </div>
               </div>
               
-              <div className="bg-[#e0dbd6] rounded-lg relative overflow-hidden flex justify-end w-[536px]">
+              <div className="bg-[#e0dbd6] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[500px] xl:w-[490px] 2xl:w-[536px]">
                 <img src={stylish} alt="" />
-                <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute bottom-2 left-48">Stylish</span>
+                <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute xl:bottom-2 bottom-1 xl:left-48 left-32">Stylish</span>
               </div>
             </div>
             
-            <div className="bg-[#eae7ee] rounded-lg relative overflow-hidden flex justify-end w-[304px]">
+            <div className="bg-[#eae7ee] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[280px] xl:w-[250px] 2xl:w-[304px]">
               <img src={elegantNecklace} alt="" />
-              <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-[#3D3D3D] z-10 absolute bottom-2 right-19">Elegant Necklaces</span>
+              <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-[#3D3D3D] z-10 absolute xl:bottom-2 bottom-1 xl:right-19 right-11">Elegant Necklaces</span>
             </div>
             
-            <div className="flex flex-col gap-[30px]">
-              <div className="bg-[#e4dfdb] rounded-lg relative overflow-hidden flex justify-end w-[540px]">
+            <div className="flex flex-col 3xl:gap-[20px] 2xl:gap-[30px] gap-[20px]">
+              <div className="bg-[#e4dfdb] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[503px] xl:w-[500px] 2xl:w-[540px]">
                 <img src={gorgeousBracelets} alt="" />
-                <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute bottom-2 left-48">Gorgeous Bracelets</span>
+                <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute xl:bottom-2 bottom-1 xl:left-48 left-29">Gorgeous Bracelets</span>
               </div>
               
-              <div className="flex flex-row gap-[30px]">
-                <div className="bg-[#e5decc] rounded-lg relative overflow-hidden flex justify-end w-[255px]">
+              <div className="flex flex-row 3xl:gap-[20px] 2xl:gap-[30px] gap-[20px]">
+                <div className="bg-[#e5decc] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[242px] xl:w-[240px] 2xl:w-[255px]">
                   <img src={statementChains} alt="" />
-                  <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute bottom-2 right-15">Statement Chains</span>
+                  <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute xl:bottom-2 bottom-1 xl:right-15 right-8">Statement Chains</span>
                 </div>
                 
-                <div className="bg-[#e6e6e6] rounded-lg relative overflow-hidden flex justify-end w-[255px]">
+                <div className="bg-[#e6e6e6] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[242px] xl:w-[240px] 2xl:w-[255px]">
                   <img src={daintyPendants} alt="" />
-                  <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute bottom-2 right-15">Dainty Pendants</span>
+                  <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute xl:bottom-2 bottom-1 xl:right-15 right-8">Dainty Pendants</span>
                 </div>
               </div>
             </div>
@@ -133,53 +132,53 @@ function Home() {
       </section>
 
       {/* Explore Diamonds */}
-      <section className="bg-[#FFF8EF] mt-24 py-[100px]">
+      <section className="bg-[#FFF8EF] mt-24 xl:py-[100px] py-[70px]">
           <div className="container mx-auto px-6 text-center">
             <h2 className="font-bellefair text-[#1A1A1A] text-[40px] xl:text-[48px] mb-2 uppercase">
               Explore Diamonds
             </h2>
-            <p className="text-[#1A1A1A] text-[15px] xl:text-[20px] mb-14">
+            <p className="text-[#1A1A1A] text-[15px] xl:text-[20px] xl:mb-14 mb-12">
               Shop Diamonds by Shape
             </p>
 
             <div className="flex justify-around">
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={roundDiamond} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Round</p>
               </div>
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={princess} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Princess</p>
               </div>
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={emerald} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Emerald</p>
               </div>
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={asscher} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Asscher</p>
               </div>
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={cushion} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Cushion</p>
               </div>
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={marquise} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Marquise</p>
               </div>
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={radiant} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Radiant</p>
               </div>
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={oval} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Oval</p>
               </div>
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={pear} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Pear</p>
               </div>
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-5 xl:gap-6">
                 <img src={heart} alt="" />
                 <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">Heart</p>
               </div>
@@ -189,17 +188,16 @@ function Home() {
       </section>
 
       {/* Most Popular */}
-      <section className="mt-24 w-full overflow-hidden">
+      <section className="xl:mt-24 mt-20 w-full overflow-hidden">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-bellefair text-[#0C758C] text-[40px] xl:text-[48px] mb-2 uppercase">
               Most Popular
             </h2>
-            <p className="text-[#1A1A1A] text-[15px] xl:text-[20px] mb-14">
+            <p className="text-[#1A1A1A] text-[15px] xl:text-[20px] xl:mb-14 mb-12">
               Selected specially for you
             </p>
             
             <div className="flex items-center justify-between w-full max-w-[1440px] gap-4 xl:gap-8">
-              {/* Left Arrow */}
               <button 
                 onClick={prevSlide}
                 className="flex-shrink-0 flex items-center justify-center w-12 h-12 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors cursor-pointer"
@@ -234,7 +232,6 @@ function Home() {
                 </div>
               </div>
 
-              {/* Right Arrow */}
               <button 
                 onClick={nextSlide}
                 className="flex-shrink-0 flex items-center justify-center w-12 h-12 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors cursor-pointer"
