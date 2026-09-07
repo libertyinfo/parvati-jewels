@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/icons/logo.svg'
 
-function Header() {
+function Header({ setInquiryState }) {
   return (
     <header className="w-full flex flex-col">
       <div className="w-full py-2 border-b border-[#9C9C9C66]">
@@ -18,7 +19,7 @@ function Header() {
         </div>
 
         <nav className="hidden md:flex space-x-8 text-[#1A1A1A] xl:text-[16px] text-[14px]">
-          <a href="#" className="hover:text-[#0C758C] transition-colors">Rings</a>
+          <Link to="/productlist" className="hover:text-[#0C758C] transition-colors">Rings</Link>
           <a href="#" className="hover:text-[#0C758C] transition-colors">Earrings</a>
           <a href="#" className="hover:text-[#0C758C] transition-colors">Diamonds</a>
           <a href="#" className="hover:text-[#0C758C] transition-colors">Bracelets</a>
@@ -27,10 +28,13 @@ function Header() {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <button className="border border-[#0C758C] text-[#0C758C] xl:px-3.5 px-3 xl:py-2.5 py-2 xl:text-[16px] text-[14px] font-medium hover:bg-[#0C758C] hover:text-white cursor-pointer transition-colors">
+          <Link to="/contact" className="border border-[#0C758C] text-[#0C758C] xl:px-3.5 px-3 xl:py-2.5 py-2 xl:text-[16px] text-[14px] font-medium hover:bg-[#0C758C] hover:text-white cursor-pointer transition-colors flex items-center justify-center">
             Contact
-          </button>
-          <button className="bg-[#0C758C] text-white xl:px-4.5 px-4 xl:py-2.5 py-2 xl:text-[16px] text-[14px] font-medium hover:bg-white hover:text-[#0C758C] transition-colors border border-[#0C758C] cursor-pointer">
+          </Link>
+          <button 
+            onClick={() => setInquiryState({ isOpen: true, type: 'general' })}
+            className="bg-[#0C758C] text-white xl:px-4.5 px-4 xl:py-2.5 py-2 xl:text-[16px] text-[14px] font-medium hover:bg-white hover:text-[#0C758C] transition-colors border border-[#0C758C] cursor-pointer"
+          >
             Inquiry
           </button>
         </div>

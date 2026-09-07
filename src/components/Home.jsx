@@ -50,10 +50,11 @@ function Home() {
   return (
     <div className="w-full flex flex-col pb-20">
 
+      {/* Hero */}
       <section className="relative 3xl:h-[745px] 2xl:h-[794px] xl:h-[675px] h-[498px] flex items-center overflow-hidden bg-[#227b8e]">
         <div className="absolute left-0 top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
         <div className="absolute w-[590px] xl:w-[800px] 2xl:w-[941px] 3xl:w-[59%]">
-            <img src={heroImg} alt="" />
+            <img src={heroImg} alt="heroImg" />
         </div>
         <div className="container mx-auto px-6">
           <div className="justify-end px-6 flex">
