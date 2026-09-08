@@ -5,9 +5,9 @@ import logo from '../assets/icons/logo.svg'
 function Header({ setInquiryState }) {
   return (
     <header className="w-full flex flex-col">
-      <div className="w-full py-2 border-b border-[#9C9C9C66]">
+      <div className="w-full py-2 border-b border-[#9C9C9C66] bg-[#13778d] hidden">
         <div className="container mx-auto px-6">
-          <p className="text-center text-[14px] text-[#3D3D3D] py-3">
+          <p className="text-center text-[14px] 3xl:text-[12px] text-[#000000] py-3">
             Best special offers every week 40% Off! Free delivery time
           </p>
         </div>

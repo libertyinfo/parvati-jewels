@@ -116,23 +116,23 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
   return (
     <div
       className={`fixed inset-0 z-[9999] ${isOpen
-          ? 'pointer-events-auto'
-          : 'pointer-events-none'
+        ? 'pointer-events-auto'
+        : 'pointer-events-none'
         }`}
     >
 
       <div
         className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${isOpen
-            ? 'visible opacity-100'
-            : 'invisible opacity-0'
+          ? 'visible opacity-100'
+          : 'invisible opacity-0'
           }`}
         onClick={closeModal}
       ></div>
 
       <div
         className={`absolute right-0 top-0 h-full w-full transform overflow-y-auto bg-white transition-transform duration-300 sm:w-[520px] ${isOpen
-            ? 'translate-x-0'
-            : 'translate-x-full'
+          ? 'translate-x-0'
+          : 'translate-x-full'
           }`}
       >
         <div className="relative flex min-h-full flex-col p-8">
@@ -236,8 +236,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                       setSelectedMetal('Silver')
                     }
                     className={`h-6 w-6 cursor-pointer rounded-full bg-[#F1F1F1] transition-all duration-200 ${selectedMetal === 'Silver'
-                        ? 'ring-1 ring-[#000000] ring-offset-1'
-                        : ''
+                      ? 'ring-1 ring-[#000000] ring-offset-1'
+                      : ''
                       }`}
                   />
 
@@ -248,8 +248,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                       setSelectedMetal('Gold')
                     }
                     className={`h-6 w-6 cursor-pointer rounded-full bg-[#E5D2A0] transition-all duration-200 ${selectedMetal === 'Gold'
-                        ? 'ring-1 ring-[#000000] ring-offset-1'
-                        : ''
+                      ? 'ring-1 ring-[#000000] ring-offset-1'
+                      : ''
                       }`}
                   />
 
@@ -260,8 +260,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                       setSelectedMetal('Rose Gold')
                     }
                     className={`h-6 w-6 cursor-pointer rounded-full bg-[#F3CDB8] transition-all duration-200 ${selectedMetal === 'Rose Gold'
-                        ? 'ring-1 ring-[#000000] ring-offset-1'
-                        : ''
+                      ? 'ring-1 ring-[#000000] ring-offset-1'
+                      : ''
                       }`}
                   />
 
@@ -272,8 +272,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                       setSelectedMetal('Platinum')
                     }
                     className={`h-6 w-6 cursor-pointer rounded-full border border-[#D0D5DD] bg-[#E9ECEC] transition-all duration-200 ${selectedMetal === 'Platinum'
-                        ? 'ring-1 ring-[#000000] ring-offset-1'
-                        : ''
+                      ? 'ring-1 ring-[#000000] ring-offset-1'
+                      : ''
                       }`}
                   />
 
@@ -299,8 +299,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                       )
                     }
                     className={`flex h-[48px] w-full cursor-pointer items-center justify-between border bg-white px-4 text-left text-[14px] transition-colors focus:outline-none ${isCategoryOpen
-                        ? 'border-[#12798C]'
-                        : 'border-[#E5E5E5]'
+                      ? 'border-[#12798C]'
+                      : 'border-[#E5E5E5]'
                       }`}
                   >
 
@@ -321,8 +321,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className={`transition-transform duration-200 ${isCategoryOpen
-                          ? 'rotate-180'
-                          : ''
+                        ? 'rotate-180'
+                        : ''
                         }`}
                     >
                       <path
@@ -426,8 +426,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                             </span>
                             <span
                               className={`text-[15px] transition-colors ${isSelected
-                                  ? 'text-[#12798C]'
-                                  : 'text-[#4A4A4A]'
+                                ? 'text-[#12798C]'
+                                : 'text-[#4A4A4A]'
                                 }`}
                             >
                               {category}
@@ -479,7 +479,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
 
               <div className="mb-8 flex gap-6">
 
-                <div className="h-[200px] w-[200px] flex-shrink-0 bg-[#F5F5F5]">
+                <div className="2xl:h-[200px] h-[185px] 2xl:w-[200px] w-[185px] flex-shrink-0 bg-[#F5F5F5]">
 
                   <img
                     src={weddingMain}
@@ -495,7 +495,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                     Wedding Ring 18K
                   </h3>
 
-                  <p className="mb-7 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
+                  <p className="2xl:mb-7 mb-6 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
                     $30.00 – $50.00
                   </p>
 
@@ -522,8 +522,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                           src={starIcon}
                           alt="star"
                           className={`h-[24px] w-[24px] ${star === 5
-                              ? 'grayscale opacity-30'
-                              : ''
+                            ? 'grayscale opacity-30'
+                            : ''
                             }`}
                         />
                       )
@@ -535,7 +535,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
 
               </div>
 
-              <p className="mb-5 text-[13px] font-light leading-[1.8] text-[#7A7A7A]">
+              <p className="2xl:mb-5 mb-3 text-[13px] font-light leading-[1.8] text-[#1A1A1A]">
 
                 Lorem ipsum dolor sit amet,
                 consectetur elit, sed do eiusmod
@@ -548,7 +548,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
 
               </p>
 
-              <p className="mb-10 text-[13px] font-light leading-[1.8] text-[#7A7A7A]">
+              <p className="2xl:mb-10 mb-8 text-[13px] font-light leading-[1.8] text-[#1A1A1A]">
 
                 Lorem ipsum dolor sit amet,
                 consectetur elit, sed do eiusmod

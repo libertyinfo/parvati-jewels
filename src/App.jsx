@@ -7,12 +7,14 @@ import Productlist from "./components/Productlist";
 import Productdetails from "./components/Productdetails";
 import Contact from "./components/Contact";
 import InquiryModal from "./components/InquiryModal";
+import Loader from "./components/Loader";
 
 function App() {
   const [inquiryState, setInquiryState] = useState({ isOpen: false, type: null });
 
   return (
     <>
+      <Loader />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<><Header setInquiryState={setInquiryState} /><Home /><Footer /></>} />
@@ -27,3 +29,4 @@ function App() {
 }
 
 export default App
+

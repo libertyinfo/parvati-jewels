@@ -1,19 +1,20 @@
 import React from 'react';
 import logo from '../assets/icons/logo.svg';
+import ScrollReveal from './ScrollReveal';
 
 function Footer() {
   return (
-    <footer className="bg-[#0C758C] w-full text-white">
+    <footer className="bg-[#0C758C] w-full text-white overflow-hidden">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 2xl:gap-10 xl:gap-8 gap-4 xl:py-16 py-12">
         
-        <div className="col-span-1 md:col-span-1 flex flex-col items-start">
+        <ScrollReveal animation="fade-up" delay={0} className="col-span-1 md:col-span-1 flex flex-col items-start">
           <img src={logo} alt="Parvati Jewels Logo" className="brightness-0 invert mb-6 w-[200px] xl:w-[230px]" />
           <p className="text-[12px] xl:text-[14px] 2xl:text-[18px] text-white/90 font-light pr-4">
             Lorem ipsum dolor sit amet, elit, sed do incididunt ut labore Neque aliquam morbi cursus risus at ultrices. A vitae sapien pellentesque. Phasellus vestibulum.
           </p>
-        </div>
+        </ScrollReveal>
 
-        <div className="col-span-1 md:col-span-1 flex flex-col mt-2 items-center">
+        <ScrollReveal animation="fade-up" delay={150} className="col-span-1 md:col-span-1 flex flex-col mt-2 items-center">
           <h3 className="font-bellefair text-[18px] 2xl:text-[22px] text-white uppercase tracking-[0.15em] mb-6">Catalog</h3>
           <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 -ml-[32px]">
             <li><a href="#" className="hover:text-white transition-colors">Rings</a></li>
@@ -23,17 +24,17 @@ function Footer() {
             <li><a href="#" className="hover:text-white transition-colors">Neckleces</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Pendants</a></li>
           </ul>
-        </div>
+        </ScrollReveal>
 
-        <div className="col-span-1 md:col-span-1 flex flex-col mt-2 items-center">
+        <ScrollReveal animation="fade-up" delay={300} className="col-span-1 md:col-span-1 flex flex-col mt-2 items-center">
           <h3 className="font-bellefair text-[18px] 2xl:text-[22px] text-white uppercase tracking-[0.15em] mb-6">Information</h3>
           <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 -ml-[22px]">
             <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Terms and condition</a></li>
           </ul>
-        </div>
+        </ScrollReveal>
 
-        <div className="col-span-1 md:col-span-1 flex flex-col mt-2 items-center">
+        <ScrollReveal animation="fade-up" delay={450} className="col-span-1 md:col-span-1 flex flex-col mt-2 items-center">
           <h3 className="font-bellefair text-[18px] 2xl:text-[22px] text-white uppercase tracking-[0.15em] mb-6">Get In Touch</h3>
           <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 ml-[40px]">
             <li className="flex items-center gap-3">
@@ -55,11 +56,11 @@ function Footer() {
               hello@Parvatijewels.com
             </li>
           </ul>
-        </div>
+        </ScrollReveal>
       </div>
 
       <div className="border-t border-white/20">
-        <div className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <ScrollReveal animation="fade-up" delay={200} className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[14px] 2xl:text-[18px] text-white font-light">
             Copyright &copy; 2024. All Rights Reserved by <span className="font-medium">ParvatiJewels</span>
           </p>
@@ -83,10 +84,10 @@ function Footer() {
               </svg>
             </a>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </footer>
   );
 }
 
-export default Footer;
+export default Footer;
