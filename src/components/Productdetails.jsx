@@ -35,7 +35,7 @@ function Productdetails({ setInquiryState }) {
         <div className="container mx-auto px-6 2xl:py-14 py-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
           
-          <ScrollReveal animation="fade-right" duration={900} className="w-full 2xl:w-[828px] xl:w-[785px] flex flex-col">
+          <ScrollReveal animation="fade-up" duration={900} delay={150} className="w-full 2xl:w-[828px] xl:w-[785px] flex flex-col">
             <div className="w-full 2xl:h-[714px] h-[655px] flex items-center justify-center overflow-hidden mb-8">
               <img src={imagesData[activeIndex].main} alt="Main product view" className="w-full h-full transition-opacity duration-500" />
             </div>
@@ -53,8 +53,8 @@ function Productdetails({ setInquiryState }) {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal animation="fade-left" duration={900} delay={150} className="w-full lg:w-[582px] flex flex-col">
-            <div className="text-[11px] 2xl:text-[16px] md:text-[13px] text-[#7A7A7A] 2xl:mb-9 mb-7 tracking-widest uppercase font-medium">
+          <ScrollReveal animation="fade-up" duration={900} delay={150} className="w-full lg:w-[582px] flex flex-col">
+            <div className="text-[11px] 2xl:text-[16px] md:text-[13px] text-[#7A7A7A] 2xl:mb-9 mb-7 uppercase font-medium">
               <Link to="/" className="hover:text-black transition-colors">HOME</Link> 
               <span className="mx-3 text-gray-300">|</span> 
               <Link to="/productlist" className="hover:text-black transition-colors">RINGS</Link>
@@ -140,4 +140,4 @@ function Productdetails({ setInquiryState }) {
   )
 }
 
-export default Productdetails;
+export default Productdetails;

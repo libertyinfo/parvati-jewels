@@ -68,7 +68,7 @@ function Home() {
       <section className="relative 3xl:h-[745px] 2xl:h-[794px] xl:h-[675px] h-[498px] flex items-center overflow-hidden bg-[#227b8e]">
         <div className="absolute left-0 top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
         <ScrollReveal animation="fade-right" duration={1000} className="absolute w-[590px] xl:w-[800px] 2xl:w-[941px] 3xl:w-[59%]">
-            <img src={heroImg} alt="heroImg" />
+          <img src={heroImg} alt="heroImg" />
         </ScrollReveal>
         <div className="container mx-auto px-6">
           <div className="justify-end px-6 flex">
@@ -96,13 +96,13 @@ function Home() {
               Shop By Category
             </h2>
           </ScrollReveal>
-          
+
           <ScrollReveal animation="fade-up" delay={100}>
             <p className="text-[#3D3D3D] text-[15px] xl:text-[20px] xl:mb-14 mb-12 text-center">
               So that you don't run out of options to choose from!
             </p>
           </ScrollReveal>
-          
+
           <div className="flex flex-col md:flex-row 3xl:gap-[20px] 2xl:gap-[30px] gap-[20px] justify-center">
 
             <div className="flex flex-col 3xl:gap-[20px] 2xl:gap-[30px] gap-[20px]">
@@ -113,7 +113,7 @@ function Home() {
                     <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-[#3D3D3D] z-10 absolute xl:bottom-2 bottom-1 xl:right-17 right-10">Classy Earrings</span>
                   </div>
                 </ScrollReveal>
-                
+
                 <ScrollReveal animation="zoom-in" delay={200}>
                   <div className="bg-[#d8dcde] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[240px] xl:w-[235px] 2xl:w-[253px] group">
                     <img src={stuningRings} alt="" className="group-hover:scale-105 transition-transform duration-500" />
@@ -121,7 +121,7 @@ function Home() {
                   </div>
                 </ScrollReveal>
               </div>
-              
+
               <ScrollReveal animation="fade-up" delay={250}>
                 <div className="bg-[#e0dbd6] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[500px] xl:w-[490px] 2xl:w-[536px] group">
                   <img src={stylish} alt="" className="group-hover:scale-105 transition-transform duration-500" />
@@ -129,14 +129,14 @@ function Home() {
                 </div>
               </ScrollReveal>
             </div>
-            
+
             <ScrollReveal animation="fade-up" delay={300}>
               <div className="bg-[#eae7ee] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[280px] xl:w-[250px] 2xl:w-[304px] h-full group">
                 <img src={elegantNecklace} alt="" className="group-hover:scale-105 transition-transform duration-500" />
                 <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-[#3D3D3D] z-10 absolute xl:bottom-2 bottom-1 xl:right-19 right-11">Elegant Necklaces</span>
               </div>
             </ScrollReveal>
-            
+
             <div className="flex flex-col 3xl:gap-[20px] 2xl:gap-[30px] gap-[20px]">
               <ScrollReveal animation="fade-up" delay={350}>
                 <div className="bg-[#e4dfdb] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[503px] xl:w-[500px] 2xl:w-[540px] group">
@@ -144,7 +144,7 @@ function Home() {
                   <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute xl:bottom-2 bottom-1 xl:left-48 left-29">Gorgeous Bracelets</span>
                 </div>
               </ScrollReveal>
-              
+
               <div className="flex flex-row 3xl:gap-[20px] 2xl:gap-[30px] gap-[20px]">
                 <ScrollReveal animation="zoom-in" delay={400}>
                   <div className="bg-[#e5decc] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[242px] xl:w-[240px] 2xl:w-[255px] group">
@@ -152,7 +152,7 @@ function Home() {
                     <span className="text-[13px] 2xl:text-[16px] font-medium text-center text-gray-700 z-10 absolute xl:bottom-2 bottom-1 xl:right-15 right-8">Statement Chains</span>
                   </div>
                 </ScrollReveal>
-                
+
                 <ScrollReveal animation="zoom-in" delay={500}>
                   <div className="bg-[#e6e6e6] rounded-lg relative overflow-hidden flex justify-end 3xl:w-[242px] xl:w-[240px] 2xl:w-[255px] group">
                     <img src={daintyPendants} alt="" className="group-hover:scale-105 transition-transform duration-500" />
@@ -167,33 +167,33 @@ function Home() {
 
       {/* Explore Diamonds */}
       <section className="bg-[#FFF8EF] mt-24 xl:py-[100px] py-[70px]">
-          <div className="container mx-auto px-6 text-center">
-            <ScrollReveal animation="fade-up">
-              <h2 className="font-bellefair text-[#1A1A1A] text-[40px] xl:text-[48px] mb-2 uppercase">
-                Explore Diamonds
-              </h2>
-            </ScrollReveal>
-            <ScrollReveal animation="fade-up" delay={100}>
-              <p className="text-[#1A1A1A] text-[15px] xl:text-[20px] xl:mb-14 mb-12">
-                Shop Diamonds by Shape
-              </p>
-            </ScrollReveal>
+        <div className="container mx-auto px-6 text-center">
+          <ScrollReveal animation="fade-up">
+            <h2 className="font-bellefair text-[#1A1A1A] text-[40px] xl:text-[48px] mb-2 uppercase">
+              Explore Diamonds
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal animation="fade-up" delay={100}>
+            <p className="text-[#1A1A1A] text-[15px] xl:text-[20px] xl:mb-14 mb-12">
+              Shop Diamonds by Shape
+            </p>
+          </ScrollReveal>
 
-            <div className="flex justify-around flex-wrap gap-y-6">
-              {diamonds.map((diamond, index) => (
-                <ScrollReveal 
-                  key={diamond.name} 
-                  animation="zoom-in" 
-                  delay={index * 80} 
-                  className="flex flex-col items-center gap-5 xl:gap-6 hover:-translate-y-2 transition-transform duration-300"
-                >
-                  <img src={diamond.icon} alt={diamond.name} />
-                  <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">{diamond.name}</p>
-                </ScrollReveal>
-              ))}
-            </div>
-
+          <div className="flex justify-around flex-wrap gap-y-6">
+            {diamonds.map((diamond, index) => (
+              <ScrollReveal
+                key={diamond.name}
+                animation="fade-up"
+                delay={100}
+                className="flex flex-col items-center gap-5 xl:gap-6 hover:-translate-y-2 transition-transform duration-300"
+              >
+                <img src={diamond.icon} alt={diamond.name} />
+                <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">{diamond.name}</p>
+              </ScrollReveal>
+            ))}
           </div>
+
+        </div>
       </section>
 
       {/* Most Popular */}
@@ -209,9 +209,9 @@ function Home() {
               Selected specially for you
             </p>
           </ScrollReveal>
-            
+
           <ScrollReveal animation="fade-up" delay={200} className="flex items-center justify-between w-full max-w-[1440px] gap-4 xl:gap-8 mx-auto">
-            <button 
+            <button
               onClick={prevSlide}
               className="flex-shrink-0 flex items-center justify-center w-12 h-12 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors cursor-pointer"
             >
@@ -222,7 +222,7 @@ function Home() {
 
             {/* Carousel Items Wrapper */}
             <div className="overflow-hidden w-full">
-              <div 
+              <div
                 className="flex transition-transform duration-500 ease-in-out gap-4"
                 style={{ transform: `translateX(calc(-${currentIndex * 25}% - ${currentIndex * 4}px))` }}
               >
@@ -237,7 +237,7 @@ function Home() {
                     <div className="bg-white w-[90%] -mt-8 relative z-10 py-4 px-2 flex flex-col items-center">
                       <h3 className="text-[#0C758C] font-bellefair text-[16px] xl:text-[20px] uppercase mb-1">{item.title}</h3>
                       <p className="text-[#6b6375] text-[10px] xl:text-[12px] text-center max-w-[200px] leading-relaxed">
-                        Diamond Kisses Bracelet With 0.05ct Set<br/>in 925 Silver
+                        Diamond Kisses Bracelet With 0.05ct Set<br />in 925 Silver
                       </p>
                     </div>
                   </div>
@@ -245,7 +245,7 @@ function Home() {
               </div>
             </div>
 
-            <button 
+            <button
               onClick={nextSlide}
               className="flex-shrink-0 flex items-center justify-center w-12 h-12 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors cursor-pointer"
             >
@@ -258,7 +258,7 @@ function Home() {
       </section>
 
       {/* CTA */}
-      <CTA/>
+      <CTA />
 
     </div>
   )
