@@ -34,7 +34,6 @@ function Header({ setInquiryState }) {
           </Link>
         </div>
 
-        {/* Desktop Nav */}
         <nav className="hidden lg:flex xl:space-x-8 space-x-6 text-[#1A1A1A] xl:text-[16px] text-[14px]">
           <Link to="/productlist" className="hover:text-[#0C758C] transition-colors">Rings</Link>
           <Link to="#" className="hover:text-[#0C758C] transition-colors">Earrings</Link>
@@ -45,7 +44,6 @@ function Header({ setInquiryState }) {
           <Link to="#" className="hover:text-[#0C758C] transition-colors">Pendent</Link>
         </nav>
 
-        {/* Desktop Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
           <Link to="/contact" className="border border-[#0C758C] text-[#0C758C] xl:px-3.5 px-3 xl:py-2.5 py-2 xl:text-[16px] text-[14px] font-medium hover:bg-[#0C758C] hover:text-white cursor-pointer transition-colors flex items-center justify-center">
             Contact
@@ -58,7 +56,6 @@ function Header({ setInquiryState }) {
           </button>
         </div>
 
-        {/* Hamburger Icon */}
         <div className="lg:hidden flex items-center">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-[#1A1A1A] focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,7 +69,6 @@ function Header({ setInquiryState }) {
         </div>
       </div>
 
-      {/* Black Overlay */}
       {isMenuOpen && (
         <div 
           className="fixed inset-0 bg-black/60 z-40 lg:hidden"
