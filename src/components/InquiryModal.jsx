@@ -130,7 +130,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
       ></div>
 
       <div
-        className={`absolute right-0 top-0 h-full w-full transform overflow-y-auto bg-white transition-transform duration-300 sm:w-[520px] ${isOpen
+        className={`absolute right-0 top-0 h-full transform overflow-y-auto bg-white transition-transform duration-300 xl:w-[520px] lg:w-[485px] max-w-full w-[445px] ${isOpen
           ? 'translate-x-0'
           : 'translate-x-full'
           }`}
@@ -199,7 +199,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="name"
                 placeholder="Name"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] p-4 text-[14px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -207,7 +207,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="email"
                 placeholder="Email"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] p-4 text-[14px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -215,7 +215,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="phone"
                 placeholder="Phone Number"
                 required
-                className="mb-8 w-full border border-[#E5E5E5] p-4 text-[14px] focus:border-[#12798C] focus:outline-none"
+                className="mb-8 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <div className="mb-6">
@@ -459,7 +459,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
 
               <button
                 type="submit"
-                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] py-4 text-[16px] font-medium text-white transition-colors hover:bg-[#12798C]"
+                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C]"
               >
                 Submit
               </button>
@@ -477,9 +477,9 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
               className="flex flex-1 flex-col"
             >
 
-              <div className="mb-8 flex gap-6">
+              <div className="lg:mb-8 mb-6 flex gap-4 md:gap-6">
 
-                <div className="2xl:h-[200px] h-[185px] 2xl:w-[200px] w-[185px] flex-shrink-0 bg-[#F5F5F5]">
+                <div className="2xl:h-[200px] md:h-[185px] h-[170px] 2xl:w-[200px] md:w-[185px] w-[170px] flex-shrink-0 bg-[#F5F5F5]">
 
                   <img
                     src={weddingMain}
@@ -495,7 +495,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                     Wedding Ring 18K
                   </h3>
 
-                  <p className="2xl:mb-7 mb-6 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
+                  <p className="2xl:mb-7 md:mb-6 mb-3 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
                     $30.00 – $50.00
                   </p>
 
@@ -561,7 +561,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="name"
                 placeholder="Name"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] p-4 text-[14px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -569,7 +569,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="email"
                 placeholder="Email"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] p-4 text-[14px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -577,12 +577,12 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="phone"
                 placeholder="Phone Number"
                 required
-                className="mb-8 w-full border border-[#E5E5E5] p-4 text-[14px] focus:border-[#12798C] focus:outline-none"
+                className="mb-8 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <button
                 type="submit"
-                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] py-4 text-[16px] font-medium text-white transition-colors hover:bg-[#12798C]"
+                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C]"
               >
                 Submit
               </button>

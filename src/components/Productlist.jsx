@@ -27,21 +27,21 @@ const products = [
 
 function Productlist() {
   return (
-    <div className='pb-20'>
+    <div className='lg:pb-20 pb-10'>
         {/* Hero */}
-        <section className="relative 3xl:h-[350px] 2xl:h-[400px] xl:h-[380px] h-[498px] flex items-center overflow-hidden bg-[#227b8e] py-6">
+        <section className="relative 3xl:h-[350px] 2xl:h-[400px] xl:h-[380px] lg:h-[307px] h-[240px] flex items-center overflow-hidden bg-[#227b8e] py-6">
           <div className="container mx-auto px-6">
             <div className="flex">
-              <ScrollReveal animation="fade-right" duration={900} className="w-full md:w-1/2 flex flex-col items-center text-white mt-12 md:mt-0">
-                <p className="xl:text-[28px] text-[25px] 3xl:text-[26px] mb-7 uppercase">Its time to show off your</p>
-                <h1 className="font-bellefair text-[56px] xl:text-[64px] 2xl:text-[92px] 3xl:text-[88px] leading-[100%] mb-7 text-center">
+              <ScrollReveal animation="fade-right" duration={900} className="w-full md:w-1/2 flex flex-col items-center text-white mt-12 md:mt-0 relative z-10">
+                <p className="xl:text-[28px] lg:text-[24px] text-[20px] 3xl:text-[26px] lg:mb-7 mb-5 uppercase drop-shadow-md">Its time to show off your</p>
+                <h1 className="font-bellefair text-[50px] lg:text-[54px] xl:text-[64px] 2xl:text-[92px] 3xl:text-[88px] leading-[100%] mb-7 text-center drop-shadow-lg">
                   RINGS
                 </h1>
               </ScrollReveal>
             </div>
           </div>
           <div className="absolute right-0 top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
-          <ScrollReveal animation="fade-left" duration={900} delay={150} className="absolute w-[590px] xl:w-[638px] 2xl:w-[672px] 3xl:w-[38%] 2xl:right-[12%] 3xl:right-[10%] right-[5%]">
+          <ScrollReveal animation="fade-left" duration={900} delay={150} className="absolute w-[404px] lg:w-[515px] xl:w-[638px] 2xl:w-[672px] 3xl:w-[38%] 2xl:right-[12%] 3xl:right-[10%] xl:right-[5%] lg:right-[2%] right-[1%] opacity-40 md:opacity-100">
             <img src={productBanner} alt="productBanner" />
           </ScrollReveal>
         </section>
@@ -49,7 +49,7 @@ function Productlist() {
         {/* Main Section */}
         <section className="container mx-auto px-6">
           <ScrollReveal animation="fade-up">
-            <div className="text-[14px] 2xl:text-[16px] text-[#3D3D3D] mb-10 tracking-widest uppercase font-medium mt-14">
+            <div className="text-[14px] 2xl:text-[16px] text-[#3D3D3D] lg:mb-10 mb-8 tracking-widest uppercase font-medium lg:mt-14 mt-10">
               <Link to="/" className="hover:text-black transition-colors">HOME</Link> <span className="mx-2">|</span> <span className="text-[#3D3D3D]">RINGS</span>
             </div>
           </ScrollReveal>
@@ -64,7 +64,7 @@ function Productlist() {
               >
                 <Link to="/productdetails" className="relative w-full flex items-center justify-center mb-5 overflow-hidden group">
                   {product.isBestseller && (
-                    <div className="absolute top-4 left-0 z-10">
+                    <div className="absolute top-4 lg:left-0 md:left-[1%] left-[5%] z-10">
                       <img src={bestsellerTag} alt="bestsellerTag" />
                     </div>
                   )}
@@ -82,4 +82,4 @@ function Productlist() {
   )
 }
 
-export default Productlist
+export default Productlist

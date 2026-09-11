@@ -7,16 +7,16 @@ function Footer() {
     <footer className="bg-[#0C758C] w-full text-white overflow-hidden">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 2xl:gap-10 xl:gap-8 gap-4 xl:py-16 py-12">
         
-        <ScrollReveal animation="fade-up" delay={0} className="col-span-1 md:col-span-1 flex flex-col items-start">
+        <ScrollReveal animation="fade-up" delay={0} className="col-span-1 md:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
           <img src={logo} alt="Parvati Jewels Logo" className="brightness-0 invert mb-6 w-[200px] xl:w-[230px]" />
-          <p className="text-[12px] xl:text-[14px] 2xl:text-[18px] text-white/90 font-light pr-4">
+          <p className="text-[12px] xl:text-[14px] 2xl:text-[18px] text-white/90 font-light md:pr-4">
             Lorem ipsum dolor sit amet, elit, sed do incididunt ut labore Neque aliquam morbi cursus risus at ultrices. A vitae sapien pellentesque. Phasellus vestibulum.
           </p>
         </ScrollReveal>
 
-        <ScrollReveal animation="fade-up" delay={150} className="col-span-1 md:col-span-1 flex flex-col mt-2 items-center">
+        <ScrollReveal animation="fade-up" delay={150} className="col-span-1 md:col-span-1 flex flex-col mt-8 md:mt-2 items-center md:items-center">
           <h3 className="font-bellefair text-[18px] 2xl:text-[22px] text-white uppercase tracking-[0.15em] mb-6">Catalog</h3>
-          <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 -ml-[32px]">
+          <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 md:-ml-[32px] items-center md:items-start text-center md:text-left">
             <li><a href="#" className="hover:text-white transition-colors">Rings</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Earrings</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Diamonds</a></li>
@@ -26,17 +26,17 @@ function Footer() {
           </ul>
         </ScrollReveal>
 
-        <ScrollReveal animation="fade-up" delay={300} className="col-span-1 md:col-span-1 flex flex-col mt-2 items-center">
+        <ScrollReveal animation="fade-up" delay={300} className="col-span-1 md:col-span-1 flex flex-col mt-8 md:mt-2 items-center md:items-center">
           <h3 className="font-bellefair text-[18px] 2xl:text-[22px] text-white uppercase tracking-[0.15em] mb-6">Information</h3>
-          <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 -ml-[22px]">
+          <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 md:-ml-[22px] items-center md:items-start text-center md:text-left">
             <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Terms and condition</a></li>
           </ul>
         </ScrollReveal>
 
-        <ScrollReveal animation="fade-up" delay={450} className="col-span-1 md:col-span-1 flex flex-col mt-2 items-center">
+        <ScrollReveal animation="fade-up" delay={450} className="col-span-1 md:col-span-1 flex flex-col mt-8 md:mt-2 items-center md:items-center">
           <h3 className="font-bellefair text-[18px] 2xl:text-[22px] text-white uppercase tracking-[0.15em] mb-6">Get In Touch</h3>
-          <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 ml-[40px]">
+          <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 md:ml-[40px] items-center md:items-start">
             <li className="flex items-center gap-3">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.18-7.076-7.076l1.293-.97c.362-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -61,7 +61,7 @@ function Footer() {
 
       <div className="border-t border-white/20">
         <ScrollReveal animation="fade-up" delay={200} className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[14px] 2xl:text-[18px] text-white font-light">
+          <p className="text-[13px] md:text-[14px] 2xl:text-[18px] text-white font-light">
             Copyright &copy; 2024. All Rights Reserved by <span className="font-medium">ParvatiJewels</span>
           </p>
           
@@ -90,4 +90,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer;

@@ -34,7 +34,6 @@ function ScrollReveal({
     const node = ref.current;
     if (!node) return;
 
-    // Fallback if IntersectionObserver is not supported
     if (!('IntersectionObserver' in window)) {
       setIsVisible(true);
       return;
