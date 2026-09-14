@@ -28,7 +28,7 @@ import neckless from '../assets/neckless.png'
 import bestsellerTag from '../assets/bestsellers.png'
 
 
-function Home() {
+function Home({ setInquiryState }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const carouselItems = [
@@ -82,7 +82,10 @@ function Home() {
               <p className="text-[13px] lg:text-[18px] xl:text-[20px] lg:mb-8 mb-6 font-light text-center">
                 Life is made up of many gorgeous moments—big and small. Celebrate a life well lived in the most radiant way.
               </p>
-              <button className="bg-white text-[#0C758C] xl:px-8 px-6 xl:py-3 py-2 text-[14px] lg:text-[16px] font-medium hover:bg-transparent hover:text-white hover:border hover:border-white transition-colors border border-transparent cursor-pointer">
+              <button 
+                onClick={() => setInquiryState({ isOpen: true, type: 'general' })}
+                className="bg-white text-[#0C758C] xl:px-8 px-6 xl:py-3 py-2 text-[14px] lg:text-[16px] font-medium hover:bg-transparent hover:text-white hover:border hover:border-white transition-colors border border-transparent cursor-pointer"
+              >
                 Inquiry
               </button>
             </ScrollReveal>

@@ -24,7 +24,6 @@ body {
   font-family: 'Bellefair', serif;
 }
 
-/* Scroll Animations */
 .scroll-reveal {
   opacity: 0;
   transition-property: opacity, transform;
@@ -37,7 +36,6 @@ body {
   transform: translate(0, 0) scale(1) rotate(0deg) !important;
 }
 
-/* Variant initial states */
 .reveal-fade-up {
   transform: translateY(40px);
 }
@@ -62,7 +60,6 @@ body {
   transform: translateY(30px) rotateX(15deg);
 }
 
-/* Loader Shimmer Animation */
 @keyframes shimmerLine {
   0% {
     transform: translateX(-100%);

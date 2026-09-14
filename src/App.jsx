@@ -17,7 +17,7 @@ function App() {
       <Loader />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<><Header setInquiryState={setInquiryState} /><Home /><Footer /></>} />
+          <Route path="/" element={<><Header setInquiryState={setInquiryState} /><Home setInquiryState={setInquiryState} /><Footer /></>} />
           <Route path="/productlist" element={<><Header setInquiryState={setInquiryState} /><Productlist /><Footer /></>} />
           <Route path="/productdetails" element={<><Header setInquiryState={setInquiryState} /><Productdetails setInquiryState={setInquiryState} /><Footer /></>} />
           <Route path="/contact" element={<><Header setInquiryState={setInquiryState} /><Contact /><Footer /></>} />
@@ -29,4 +29,3 @@ function App() {
 }
 
 export default App
-
