@@ -14,15 +14,15 @@ function Contact() {
                 <div className="container mx-auto px-6">
                     <div className="flex">
                         <ScrollReveal animation="fade-right" duration={900} className="w-full md:w-1/2 flex flex-col items-center text-white mt-12 md:mt-0 relative z-10">
-                            <p className="2xl:text-[28px] xl:text-[26px] md:text-[22px] text-[18px] 3xl:text-[26px] 2xl:mb-7 mb-5 uppercase drop-shadow-md text-center">Let us know what you have in mind</p>
-                            <h1 className="font-bellefair text-[42px] md:text-[54px] xl:text-[62px] 2xl:text-[92px] 3xl:text-[88px] leading-[100%] 2xl:mb-7 mb-5 text-center drop-shadow-lg">
+                            <p className="2xl:text-[28px] xl:text-[26px] md:text-[20px] text-[18px] 3xl:text-[26px] 2xl:mb-7 mb-5 uppercase drop-shadow-md text-center">Let us know what you have in mind</p>
+                            <h1 className="font-bellefair text-[42px] md:text-[50px] xl:text-[62px] 2xl:text-[92px] 3xl:text-[88px] leading-[100%] 2xl:mb-7 mb-5 text-center drop-shadow-lg">
                                 CONTACT
                             </h1>
                         </ScrollReveal>
                     </div>
                 </div>
                 <div className="absolute right-[5%] top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
-                <ScrollReveal animation="fade-left" duration={900} delay={150} className="absolute w-[462px] xl:w-[580px] 2xl:w-[602px] 3xl:w-[37%] right-[2%] xl:right-[5%] 2xl:right-[12%] 3xl:right-[6%] opacity-40 md:opacity-100">
+                <ScrollReveal animation="fade-left" duration={900} delay={150} className="absolute w-[361px] lg:w-[462px] xl:w-[580px] 2xl:w-[602px] 3xl:w-[37%] right-[2%] xl:right-[5%] 2xl:right-[12%] 3xl:right-[6%] opacity-40 md:opacity-100">
                     <img src={contactHero} alt="contactHero" />
                 </ScrollReveal>
             </section>

@@ -159,7 +159,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
             </svg>
           </button>
 
-          <h2 className="mb-10 font-bellefair text-[32px] uppercase tracking-wide text-[#12798C]">
+          <h2 className="lg:mb-10 mb-8 font-bellefair text-[32px] uppercase tracking-wide text-[#12798C]">
             INQUIRY
           </h2>
 

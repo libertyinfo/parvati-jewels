@@ -4,7 +4,7 @@ import ScrollReveal from './ScrollReveal';
 
 function Footer() {
   return (
-    <footer className="bg-[#0C758C] w-full text-white overflow-hidden">
+    <footer className="bg-[#0C758C] w-full text-white">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 2xl:gap-10 xl:gap-8 gap-4 xl:py-16 py-12">
         
         <ScrollReveal animation="fade-up" delay={0} className="col-span-1 md:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
