@@ -21,7 +21,7 @@ function Header({ setInquiryState }) {
     } else {
       document.body.style.overflow = 'unset';
     }
-    
+
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -40,18 +40,21 @@ function Header({ setInquiryState }) {
       <div className="container mx-auto px-6 py-5 flex justify-between items-center bg-white relative z-50">
         <div className="flex-shrink-0">
           <Link to="/">
-            <img src={logo} alt="Parvati Jewels Logo" className="xl:h-[50px] lg:h-[35px] h-[40px] w-auto" />
+            <img src={logo} alt="Parvati Jewels Logo" className="xl:h-[50px] lg:h-[35px] md:h-[40px] h-[36px] w-auto" />
           </Link>
         </div>
 
         <nav className="hidden lg:flex xl:space-x-8 space-x-6 items-center text-[#1A1A1A] xl:text-[16px] text-[14px]">
-          <Link to="/productlist" className="hover:text-[#0C758C] transition-colors">Rings</Link>
-          <Link to="#" className="hover:text-[#0C758C] transition-colors">Earrings</Link>
-          
+          <Link to="/category/rings" className="hover:text-[#0C758C] transition-colors">Rings</Link>
+          <Link to="/category/earrings" className="hover:text-[#0C758C] transition-colors">Earrings</Link>
+          <Link to="/category/bracelets" className="hover:text-[#0C758C] transition-colors">Bracelets</Link>
+          <Link to="/category/necklace" className="hover:text-[#0C758C] transition-colors">Necklaces</Link>
+          <Link to="/category/pendant" className="hover:text-[#0C758C] transition-colors">Pendant</Link>
+
           {/* Diamonds Dropdown */}
           <div className="relative group h-full flex items-center">
             <Link to="#" className="hover:text-[#0C758C] transition-colors py-4">Diamonds</Link>
-            
+
             <div className="absolute top-[100%] pt-2 left-1/2 -translate-x-1/2 w-[420px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
               <div className="bg-white shadow-[0_10px_40px_rgba(0,0,0,0.08)]">
                 <div className="grid grid-cols-2 gap-x-7 gap-y-6 p-5">
@@ -100,17 +103,14 @@ function Header({ setInquiryState }) {
             </div>
           </div>
 
-          <Link to="#" className="hover:text-[#0C758C] transition-colors">Bracelets</Link>
-          <Link to="#" className="hover:text-[#0C758C] transition-colors">Neckleces</Link>
           <Link to="#" className="hover:text-[#0C758C] transition-colors">Gifts</Link>
-          <Link to="#" className="hover:text-[#0C758C] transition-colors">Pendent</Link>
         </nav>
 
         <div className="hidden lg:flex items-center space-x-4">
           <Link to="/contact" className="border border-[#0C758C] text-[#0C758C] xl:px-3.5 px-3 xl:py-2.5 py-2 xl:text-[16px] text-[14px] font-medium hover:bg-[#0C758C] hover:text-white cursor-pointer transition-colors flex items-center justify-center">
             Contact
           </Link>
-          <button 
+          <button
             onClick={() => setInquiryState({ isOpen: true, type: 'general' })}
             className="bg-[#0C758C] text-white xl:px-4.5 px-4 xl:py-2.5 py-2 xl:text-[16px] text-[14px] font-medium hover:bg-white hover:text-[#0C758C] transition-colors border border-[#0C758C] cursor-pointer"
           >
@@ -132,31 +132,30 @@ function Header({ setInquiryState }) {
       </div>
 
       {isMenuOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/60 z-40 lg:hidden"
           onClick={() => setIsMenuOpen(false)}
         ></div>
       )}
 
       {/* Mobile & Tablet Menu */}
-      <div 
-        className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-lg transition-all duration-300 overflow-hidden z-50 ${
-          isMenuOpen ? 'max-h-[500px] border-t border-gray-100' : 'max-h-0'
-        }`}
+      <div
+        className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-lg transition-all duration-300 overflow-hidden z-50 ${isMenuOpen ? 'max-h-[500px] border-t border-gray-100' : 'max-h-0'
+          }`}
       >
         <nav className="flex flex-col px-6 py-4 space-y-4 text-[#1A1A1A] text-[15px]">
-          <Link to="/productlist" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Rings</Link>
-          <Link to="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Earrings</Link>
+          <Link to="/category/rings" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Rings</Link>
+          <Link to="/category/earrings" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Earrings</Link>
+          <Link to="/category/bracelets" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Bracelets</Link>
+          <Link to="/category/necklace" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Necklaces</Link>
+          <Link to="/category/pendant" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Pendant</Link>
           <Link to="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Diamonds</Link>
-          <Link to="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Bracelets</Link>
-          <Link to="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Neckleces</Link>
           <Link to="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Gifts</Link>
-          <Link to="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Pendent</Link>
           <div className="flex flex-col space-y-3 pt-4 border-t border-gray-100">
             <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="border border-[#0C758C] text-[#0C758C] py-2 text-center font-medium hover:bg-[#0C758C] hover:text-white transition-colors">
               Contact
             </Link>
-            <button 
+            <button
               onClick={() => { setInquiryState({ isOpen: true, type: 'general' }); setIsMenuOpen(false); }}
               className="bg-[#0C758C] text-white py-2 text-center font-medium border border-[#0C758C] hover:bg-white hover:text-[#0C758C] transition-colors"
             >

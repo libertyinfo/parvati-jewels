@@ -3,16 +3,16 @@ import weddingMain from '../assets/ring-detail/wedding-main.png';
 import starIcon from '../assets/icons/star.svg';
 
 const InquiryModal = ({ inquiryState, setInquiryState }) => {
-  const { isOpen, type } = inquiryState || {
+  const { isOpen, type, product } = inquiryState || {
     isOpen: false,
     type: null,
+    product: null,
   };
 
   const [selectedMetal, setSelectedMetal] = useState('Silver');
-
   const [selectedCategories, setSelectedCategories] = useState([]);
-
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const categoryRef = useRef(null);
 
@@ -79,26 +79,37 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     const formData = new FormData(e.target);
-
     const inquiryData = {
+      type,
       name: formData.get('name'),
       email: formData.get('email'),
       phone: formData.get('phone'),
-      metal: selectedMetal,
-      categories: selectedCategories,
       message: formData.get('message'),
+      metal: type === 'general' ? selectedMetal : null,
+      categories: type === 'general' ? selectedCategories : null,
+      productId: product?.id || null,
     };
 
-    console.log('Inquiry Data:', inquiryData);
-
-    setInquiryState({
-      isOpen: true,
-      type: 'success',
-    });
+    try {
+      const response = await fetch('/api/inquiries', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(inquiryData)
+      });
+      if (!response.ok) throw new Error('Submission failed');
+      
+      setInquiryState({ isOpen: true, type: 'success' });
+    } catch (error) {
+      console.error('Error submitting inquiry:', error);
+      alert('Failed to submit inquiry. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const getCategoryText = () => {
@@ -135,7 +146,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
           : 'translate-x-full'
           }`}
       >
-        <div className="relative flex min-h-full flex-col p-8">
+        <div className="relative flex min-h-full flex-col md:p-8 p-6">
 
           <button
             type="button"
@@ -199,7 +210,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="name"
                 placeholder="Name"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -207,7 +218,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="email"
                 placeholder="Email"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -215,7 +226,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="phone"
                 placeholder="Phone Number"
                 required
-                className="mb-8 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-8 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <div className="mb-6">
@@ -459,9 +470,10 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
 
               <button
                 type="submit"
-                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C]"
+                disabled={isSubmitting}
+                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C] disabled:bg-[#9C9C9C]"
               >
-                Submit
+                {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>
 
             </form>
@@ -477,39 +489,41 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
               className="flex flex-1 flex-col"
             >
 
-              <div className="lg:mb-8 mb-6 flex gap-4 md:gap-6">
+              <div className="lg:mb-8 mb-6 flex flex-col sm:flex-row gap-4 md:gap-6">
 
-                <div className="2xl:h-[200px] md:h-[185px] h-[170px] 2xl:w-[200px] md:w-[185px] w-[170px] flex-shrink-0 bg-[#F5F5F5]">
+                <div className="2xl:h-[200px] md:h-[185px] h-[150px] 2xl:w-[200px] md:w-[185px] w-[150px] flex-shrink-0 bg-[#F5F5F5] mx-auto sm:mx-0">
 
                   <img
-                    src={weddingMain}
+                    src={product?.images?.[0]?.imageUrl || weddingMain}
                     alt="Product"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover mix-blend-multiply"
                   />
 
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col text-center sm:text-left">
 
-                  <h3 className="mb-3 font-bellefair text-[24px] text-[#12798C] 2xl:text-[26px]">
-                    Wedding Ring 18K
+                  <h3 className="mb-3 font-bellefair text-[20px] sm:text-[24px] text-[#12798C] 2xl:text-[24px]">
+                    {product?.name || 'Wedding Ring 18K'}
                   </h3>
 
-                  <p className="2xl:mb-7 md:mb-6 mb-3 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
-                    $30.00 – $50.00
-                  </p>
+                  {product?.variants && product.variants.length > 0 && (
+                    <p className="2xl:mb-5 md:mb-6 mb-3 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
+                      ${Math.min(...product.variants.map(v => v.price)).toFixed(2)} – ${Math.max(...product.variants.map(v => v.price)).toFixed(2)}
+                    </p>
+                  )}
 
                   <p className="mb-1 text-[13px] text-[#1A1A1A] 2xl:text-[16px]">
                     Metal
                     <span className="ml-1 text-[14px] font-light text-[#7A7A7A]">
-                      18K White Gold
+                      {product?.material || '18K White Gold'}
                     </span>
                   </p>
 
                   <p className="mb-4 text-[13px] text-[#1A1A1A] 2xl:text-[16px]">
                     Product Category
                     <span className="ml-1 text-[14px] font-light text-[#7A7A7A]">
-                      Ring
+                      {product?.category?.name || 'Ring'}
                     </span>
                   </p>
 
@@ -561,7 +575,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="name"
                 placeholder="Name"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -569,7 +583,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="email"
                 placeholder="Email"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -577,14 +591,15 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="phone"
                 placeholder="Phone Number"
                 required
-                className="mb-8 w-full border border-[#E5E5E5] p-4 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-8 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <button
                 type="submit"
-                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C]"
+                disabled={isSubmitting}
+                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C] disabled:bg-[#9C9C9C]"
               >
-                Submit
+                {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>
 
             </form>

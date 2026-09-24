@@ -11,7 +11,12 @@ function Contact() {
         <div>
             {/* Hero Section */}
             <section className="relative 3xl:h-[380px] 2xl:h-[400px] xl:h-[385px] lg:h-[307px] h-[240px] flex items-center overflow-hidden bg-[#227b8e] py-6">
-                <div className="container mx-auto px-6">
+                <div className="absolute right-[5%] top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
+                <ScrollReveal animation="fade-left" duration={900} delay={150} className="absolute z-0 w-[361px] lg:w-[462px] xl:w-[580px] 2xl:w-[602px] 3xl:w-[37%] right-[2%] xl:right-[5%] 2xl:right-[12%] 3xl:right-[6%] opacity-40 md:opacity-100">
+                    <img src={contactHero} alt="contactHero" />
+                </ScrollReveal>
+                <div className="absolute inset-0 bg-black/40 md:hidden z-[5]"></div>
+                <div className="container mx-auto px-6 relative z-10">
                     <div className="flex">
                         <ScrollReveal animation="fade-right" duration={900} className="w-full md:w-1/2 flex flex-col items-center text-white mt-12 md:mt-0 relative z-10">
                             <p className="2xl:text-[28px] xl:text-[26px] md:text-[20px] text-[18px] 3xl:text-[26px] 2xl:mb-7 mb-5 uppercase drop-shadow-md text-center">Let us know what you have in mind</p>
@@ -21,10 +26,6 @@ function Contact() {
                         </ScrollReveal>
                     </div>
                 </div>
-                <div className="absolute right-[5%] top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
-                <ScrollReveal animation="fade-left" duration={900} delay={150} className="absolute w-[361px] lg:w-[462px] xl:w-[580px] 2xl:w-[602px] 3xl:w-[37%] right-[2%] xl:right-[5%] 2xl:right-[12%] 3xl:right-[6%] opacity-40 md:opacity-100">
-                    <img src={contactHero} alt="contactHero" />
-                </ScrollReveal>
             </section>
 
             {/* Main Section */}

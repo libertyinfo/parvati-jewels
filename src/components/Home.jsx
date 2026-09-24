@@ -69,17 +69,18 @@ function Home({ setInquiryState }) {
       {/* Hero */}
       <section className="relative 3xl:h-[745px] 2xl:h-[794px] xl:h-[675px] lg:h-[498px] h-[365px] flex items-center overflow-hidden bg-[#227b8e]">
         <div className="absolute left-0 top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
-        <ScrollReveal animation="fade-right" duration={1000} className="absolute w-[432px] lg:w-[590px] xl:w-[800px] 2xl:w-[941px] 3xl:w-[59%]">
+        <ScrollReveal animation="fade-right" duration={1000} className="absolute z-0 w-[432px] lg:w-[590px] xl:w-[800px] 2xl:w-[941px] 3xl:w-[59%]">
           <img src={heroImg} alt="heroImg" />
         </ScrollReveal>
-        <div className="container mx-auto px-6">
+        <div className="absolute inset-0 bg-black/40 md:hidden z-[5]"></div>
+        <div className="container mx-auto px-6 relative z-10">
           <div className="justify-end px-6 flex">
-            <ScrollReveal animation="fade-left" duration={900} delay={200} className="w-full md:w-1/2 flex flex-col items-center text-white mt-12 md:mt-0">
-              <p className="xl:text-[28px] lg:text-[25px] text-[20px] lg:mb-7 mb-5 uppercase">New Arrivals</p>
-              <h1 className="font-bellefair text-[50px] lg:text-[56px] xl:text-[64px] 2xl:text-[92px] leading-[100%] lg:mb-7 mb-5 text-center">
+            <ScrollReveal animation="fade-left" duration={900} delay={200} className="w-full md:w-1/2 flex flex-col items-center text-white mt-12 md:mt-0 relative z-10">
+              <p className="xl:text-[28px] lg:text-[25px] md:text-[20px] text-[18px] lg:mb-7 mb-5 uppercase">New Arrivals</p>
+              <h1 className="font-bellefair text-[40px] md:text-[50px] lg:text-[56px] xl:text-[64px] 2xl:text-[92px] leading-[100%] lg:mb-7 mb-5 text-center">
                 TIMELESS<br />BRILLIANCE
               </h1>
-              <p className="text-[13px] lg:text-[18px] xl:text-[20px] lg:mb-8 mb-6 font-light text-center">
+              <p className="text-[11px] md:text-[13px] lg:text-[18px] xl:text-[20px] lg:mb-8 mb-6 font-light text-center">
                 Life is made up of many gorgeous moments—big and small. Celebrate a life well lived in the most radiant way.
               </p>
               <button 
@@ -97,7 +98,7 @@ function Home({ setInquiryState }) {
       <section className="w-full lg:mt-24 md:mt-18 mt-12 bg-white">
         <div className="container mx-auto px-6 flex flex-col items-center">
           <ScrollReveal animation="fade-up" delay={0}>
-            <h2 className="font-bellefair text-[#0C758C] text-[30px] md:text-[40px] xl:text-[48px] mb-2 text-center uppercase">
+            <h2 className="font-bellefair text-[#0C758C] text-[26px] md:text-[40px] xl:text-[48px] mb-2 text-center uppercase">
               Shop By Category
             </h2>
           </ScrollReveal>
@@ -176,7 +177,7 @@ function Home({ setInquiryState }) {
       <section className="bg-[#FFF8EF] md:mt-24 mt-20 xl:py-[100px] md:py-[70px] py-[40px]">
         <div className="container mx-auto px-6 text-center">
           <ScrollReveal animation="fade-up">
-            <h2 className="font-bellefair text-[#1A1A1A] text-[30px] md:text-[40px] xl:text-[48px] mb-2 uppercase">
+            <h2 className="font-bellefair text-[#1A1A1A] text-[26px] md:text-[40px] xl:text-[48px] mb-2 uppercase">
               Explore Diamonds
             </h2>
           </ScrollReveal>
@@ -207,7 +208,7 @@ function Home({ setInquiryState }) {
       <section className="xl:mt-24 md:mt-20 mt-10 w-full overflow-hidden">
         <div className="container mx-auto px-6 text-center">
           <ScrollReveal animation="fade-up">
-            <h2 className="font-bellefair text-[#0C758C] text-[30px] md:text-[40px] xl:text-[48px] mb-2 uppercase">
+            <h2 className="font-bellefair text-[#0C758C] text-[26px] md:text-[40px] xl:text-[48px] mb-2 uppercase">
               Most Popular
             </h2>
           </ScrollReveal>
