@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import CTA from "./CTA";
 import ScrollReveal from './ScrollReveal';
 import starIcon from '../assets/icons/star.svg';
+import { fetchJson } from '../lib/api';
        
 function Productdetails({ setInquiryState }) {
   const { slug } = useParams();

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import weddingMain from '../assets/ring-detail/wedding-main.png';
 import starIcon from '../assets/icons/star.svg';
+import { fetchJson } from '../lib/api';
 
 const InquiryModal = ({ inquiryState, setInquiryState }) => {
   const { isOpen, type, product } = inquiryState || {
@@ -96,12 +97,11 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
     };
 
     try {
-      const response = await fetch('/api/inquiries', {
+      await fetchJson('/api/inquiries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(inquiryData)
+        body: JSON.stringify(inquiryData),
       });
-      if (!response.ok) throw new Error('Submission failed');
       
       setInquiryState({ isOpen: true, type: 'success' });
     } catch (error) {
