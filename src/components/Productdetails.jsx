@@ -14,11 +14,7 @@ function Productdetails({ setInquiryState }) {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`/api/products/${slug}`)
-      .then(res => {
-        if (!res.ok) throw new Error('Product not found');
-        return res.json();
-      })
+    fetchJson(`/api/products/${slug}`)
       .then(data => {
         setProduct(data);
         setLoading(false);

@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import CTA from './CTA'
 import ScrollReveal from './ScrollReveal'
 import bestsellerTag from '../assets/bestsellers.png'
+import { fetchJson } from '../lib/api'
 
 import ringsBanner from '../assets/ring-heroimg.png'
 import earringsBanner from '../assets/earrings-heroimg.png'
@@ -27,11 +28,7 @@ function Productlist() {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`/api/products?category=${categorySlug || 'rings'}`)
-      .then(res => {
-        if (!res.ok) throw new Error('Failed to fetch products');
-        return res.json();
-      })
+    fetchJson(`/api/products?category=${categorySlug || 'rings'}`)
       .then(data => {
         setProducts(data);
         setLoading(false);
