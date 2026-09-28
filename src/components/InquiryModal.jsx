@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import weddingMain from '../assets/ring-detail/wedding-main.png';
 import starIcon from '../assets/icons/star.svg';
 import { fetchJson } from '../lib/api';
+import { productImageUrl } from '../lib/productImage';
 
 const InquiryModal = ({ inquiryState, setInquiryState }) => {
   const { isOpen, type, product } = inquiryState || {
@@ -494,7 +495,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 <div className="2xl:h-[200px] md:h-[185px] h-[150px] 2xl:w-[200px] md:w-[185px] w-[150px] flex-shrink-0 bg-[#F5F5F5] mx-auto sm:mx-0">
 
                   <img
-                    src={product?.images?.[0]?.imageUrl || weddingMain}
+                    src={product?.images?.[0]?.imageUrl ? productImageUrl(product.images[0].imageUrl) : weddingMain}
                     alt="Product"
                     className="h-full w-full object-cover mix-blend-multiply"
                   />

@@ -69,7 +69,7 @@ async function main() {
       isBestseller: false,
       images: {
         create: [
-          { imageUrl: '/src/assets/rings/love.png', sortOrder: 1, isPrimary: true }
+          { imageUrl: '/products/rings/love.png', sortOrder: 1, isPrimary: true }
         ]
       },
       variants: {
@@ -104,7 +104,7 @@ async function main() {
       isBestseller: true,
       images: {
         create: [
-          { imageUrl: '/src/assets/rings/lock.png', sortOrder: 1, isPrimary: true }
+          { imageUrl: '/products/rings/lock.png', sortOrder: 1, isPrimary: true }
         ]
       },
       variants: {
@@ -157,7 +157,7 @@ async function main() {
       isBestseller: false,
       images: {
         create: [
-          { imageUrl: '/src/assets/rings/vine.png', sortOrder: 1, isPrimary: true }
+          { imageUrl: '/products/rings/vine.png', sortOrder: 1, isPrimary: true }
         ]
       },
       variants: {
@@ -186,7 +186,7 @@ async function main() {
       isBestseller: false,
       images: {
         create: [
-          { imageUrl: '/src/assets/rings/wedding.png', sortOrder: 1, isPrimary: true }
+          { imageUrl: '/products/rings/wedding.png', sortOrder: 1, isPrimary: true }
         ]
       },
       variants: {
@@ -229,7 +229,7 @@ async function main() {
     create: {
       name: 'Drop Diamond Earring', slug: 'earring1', categoryId: earringsCategory.id,
       description: 'Elegant drop diamond earrings.', isBestseller: true,
-      images: { create: [{ imageUrl: '/src/assets/earrings/dropdiamond-earring.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/earrings/dropdiamond-earring.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'EAR1', price: 120.00 }] }
     }
   });
@@ -238,7 +238,7 @@ async function main() {
     create: {
       name: 'Hoop Earring', slug: 'earring2', categoryId: earringsCategory.id,
       description: 'Classic hoop earrings.', isBestseller: false,
-      images: { create: [{ imageUrl: '/src/assets/earrings/hoop-earring.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/earrings/hoop-earring.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'EAR2', price: 80.00 }] }
     }
   });
@@ -248,7 +248,7 @@ async function main() {
     create: {
       name: 'Pearshape Necklace', slug: 'necklace1', categoryId: necklaceCategory.id,
       description: 'Beautiful pearshape necklace.', isBestseller: true,
-      images: { create: [{ imageUrl: '/src/assets/necklace/pearshape-necklace.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/necklace/pearshape-necklace.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'NECK1', price: 150.00 }] }
     }
   });
@@ -257,7 +257,7 @@ async function main() {
     create: {
       name: 'Solitaire Necklace', slug: 'necklace2', categoryId: necklaceCategory.id,
       description: 'Stunning solitaire necklace.', isBestseller: false,
-      images: { create: [{ imageUrl: '/src/assets/necklace/solitaire-necklace.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/necklace/solitaire-necklace.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'NECK2', price: 130.00 }] }
     }
   });
@@ -267,7 +267,7 @@ async function main() {
     create: {
       name: 'Tennis Bracelet', slug: 'bracelet1', categoryId: braceletCategory.id,
       description: 'Classic tennis bracelet.', isBestseller: true,
-      images: { create: [{ imageUrl: '/src/assets/bracelets/tennis-bracelet.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/bracelets/tennis-bracelet.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'BRAC1', price: 90.00 }] }
     }
   });
@@ -276,7 +276,7 @@ async function main() {
     create: {
       name: 'Gold Knot Bracelet', slug: 'bracelet2', categoryId: braceletCategory.id,
       description: 'Elegant gold knot bracelet.', isBestseller: false,
-      images: { create: [{ imageUrl: '/src/assets/bracelets/goldknot-bracelet.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/bracelets/goldknot-bracelet.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'BRAC2', price: 75.00 }] }
     }
   });
@@ -286,7 +286,7 @@ async function main() {
     create: {
       name: 'Teardrop Pendant', slug: 'pendant1', categoryId: pendantCategory.id,
       description: 'Beautiful teardrop pendant.', isBestseller: true,
-      images: { create: [{ imageUrl: '/src/assets/pendant/teardrop-pendant.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/pendant/teardrop-pendant.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'PEND1', price: 60.00 }] }
     }
   });
@@ -295,7 +295,7 @@ async function main() {
     create: {
       name: 'Cultural Pendant', slug: 'pendant2', categoryId: pendantCategory.id,
       description: 'Traditional cultural pendant.', isBestseller: false,
-      images: { create: [{ imageUrl: '/src/assets/pendant/cultural-pendant.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/pendant/cultural-pendant.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'PEND2', price: 55.00 }] }
     }
   });
@@ -305,7 +305,7 @@ async function main() {
     create: {
       name: 'Diamond Earring', slug: 'earring3', categoryId: earringsCategory.id,
       description: 'Classic diamond earrings.', isBestseller: false,
-      images: { create: [{ imageUrl: '/src/assets/earrings/earring.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/earrings/earring.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'EAR3', price: 95.00 }] }
     }
   });
@@ -314,7 +314,7 @@ async function main() {
     create: {
       name: 'Round Earring', slug: 'earring4', categoryId: earringsCategory.id,
       description: 'Elegant round earrings.', isBestseller: true,
-      images: { create: [{ imageUrl: '/src/assets/earrings/round-earring.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/earrings/round-earring.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'EAR4', price: 110.00 }] }
     }
   });
@@ -324,7 +324,7 @@ async function main() {
     create: {
       name: 'Chetah Bracelet', slug: 'bracelet3', categoryId: braceletCategory.id,
       description: 'Stylish chetah bracelet.', isBestseller: false,
-      images: { create: [{ imageUrl: '/src/assets/bracelets/chetah-bracelet.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/bracelets/chetah-bracelet.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'BRAC3', price: 105.00 }] }
     }
   });
@@ -333,7 +333,7 @@ async function main() {
     create: {
       name: 'Vermeil Twist Bracelet', slug: 'bracelet4', categoryId: braceletCategory.id,
       description: 'Beautiful vermeil twist bracelet.', isBestseller: true,
-      images: { create: [{ imageUrl: '/src/assets/bracelets/vermeiltwist-bracelet.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/bracelets/vermeiltwist-bracelet.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'BRAC4', price: 125.00 }] }
     }
   });
@@ -343,7 +343,7 @@ async function main() {
     create: {
       name: 'Pendant Necklace', slug: 'necklace3', categoryId: necklaceCategory.id,
       description: 'Elegant pendant necklace.', isBestseller: true,
-      images: { create: [{ imageUrl: '/src/assets/necklace/pendant-necklace.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/necklace/pendant-necklace.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'NECK3', price: 140.00 }] }
     }
   });
@@ -352,7 +352,7 @@ async function main() {
     create: {
       name: 'Silver Crystal Necklace', slug: 'necklace4', categoryId: necklaceCategory.id,
       description: 'Stunning silver crystal necklace.', isBestseller: false,
-      images: { create: [{ imageUrl: '/src/assets/necklace/silvercrystal-necklace.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/necklace/silvercrystal-necklace.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'NECK4', price: 115.00 }] }
     }
   });
@@ -362,7 +362,7 @@ async function main() {
     create: {
       name: 'Moissanite Diamond Pendant', slug: 'pendant3', categoryId: pendantCategory.id,
       description: 'Brilliant moissanite diamond pendant.', isBestseller: true,
-      images: { create: [{ imageUrl: '/src/assets/pendant/moissanitediamond-pendant.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/pendant/moissanitediamond-pendant.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'PEND3', price: 180.00 }] }
     }
   });
@@ -371,7 +371,7 @@ async function main() {
     create: {
       name: 'Pear Pendant', slug: 'pendant4', categoryId: pendantCategory.id,
       description: 'Elegant pear-shaped pendant.', isBestseller: false,
-      images: { create: [{ imageUrl: '/src/assets/pendant/pear-pendant.png', sortOrder: 1, isPrimary: true }] },
+      images: { create: [{ imageUrl: '/products/pendant/pear-pendant.png', sortOrder: 1, isPrimary: true }] },
       variants: { create: [{ sku: 'PEND4', price: 85.00 }] }
     }
   });

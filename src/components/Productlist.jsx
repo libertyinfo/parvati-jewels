@@ -4,6 +4,7 @@ import CTA from './CTA'
 import ScrollReveal from './ScrollReveal'
 import bestsellerTag from '../assets/bestsellers.png'
 import { fetchJson } from '../lib/api'
+import { productImageUrl } from '../lib/productImage'
 
 import ringsBanner from '../assets/ring-heroimg.png'
 import earringsBanner from '../assets/earrings-heroimg.png'
@@ -91,7 +92,7 @@ function Productlist() {
                     </div>
                   )}
                   {product.primaryImage ? (
-                    <img src={product.primaryImage} alt={product.name} className="object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" />
+                    <img src={productImageUrl(product.primaryImage)} alt={product.name} className="object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" />
                   ) : (
                     <div className="w-full h-[250px] bg-gray-100 flex items-center justify-center text-gray-400">No Image</div>
                   )}

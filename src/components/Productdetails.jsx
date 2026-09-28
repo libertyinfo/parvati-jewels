@@ -4,6 +4,7 @@ import CTA from "./CTA";
 import ScrollReveal from './ScrollReveal';
 import starIcon from '../assets/icons/star.svg';
 import { fetchJson } from '../lib/api';
+import { productImageUrl } from '../lib/productImage';
        
 function Productdetails({ setInquiryState }) {
   const { slug } = useParams();
@@ -53,7 +54,7 @@ function Productdetails({ setInquiryState }) {
           
           <ScrollReveal animation="fade-up" duration={900} delay={150} className="2xl:w-[828px] xl:w-[785px] lg:w-[765px] md:w-[720px] w-full flex flex-col">
             <div className="w-full 2xl:h-[714px] xl:h-[655px] h-[260px] md:h-[595px] flex items-center justify-center overflow-hidden md:mb-8 mb-5">
-              <img src={images[activeIndex]?.imageUrl} alt="Main product view" className="w-full h-full object-cover transition-opacity duration-500" />
+              <img src={productImageUrl(images[activeIndex]?.imageUrl)} alt="Main product view" className="w-full h-full object-cover transition-opacity duration-500" />
             </div>
             
             <div className="flex flex-wrap justify-between md:gap-3 gap-2 overflow-x-auto pb-2">
@@ -63,7 +64,7 @@ function Productdetails({ setInquiryState }) {
                   className={`md:w-[15%] w-[20%] cursor-pointer transition-all duration-300 border ${activeIndex === index ? 'border-[#3D3D3D] shadow-sm' : 'border-transparent hover:border-gray-300'}`}
                   onClick={() => setActiveIndex(index)}
                 >
-                  <img src={item.imageUrl} alt={`Thumbnail ${index + 1}`} className="w-full 2xl:h-[134px] xl:h-[110px] md:h-[90px] h-[56px] object-cover" />
+                  <img src={productImageUrl(item.imageUrl)} alt={`Thumbnail ${index + 1}`} className="w-full 2xl:h-[134px] xl:h-[110px] md:h-[90px] h-[56px] object-cover" />
                 </div>
               ))}
             </div>
