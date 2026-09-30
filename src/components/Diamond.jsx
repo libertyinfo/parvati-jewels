@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import Isotope from "isotope-layout";
 import ScrollReveal from "./ScrollReveal";
@@ -6,24 +6,43 @@ import diamondHero from "../assets/diamond-heroimg.png";
 import bestsellerTag from "../assets/bestsellers.png";
 import { fetchJson } from "../lib/api";
 import { productImageUrl } from "../lib/productImage";
-import { getProductShapes } from "../lib/productShapes";
+import {
+  DIAMOND_SHAPE_TABS,
+  getProductShapes,
+  productMatchesDiamondShape,
+  compareProductsByStoneShape,
+} from "../lib/productShapes";
+import { shapeFilterClass } from "../lib/shapeFilterClass";
 import CTA from "./CTA";
+
+const SHAPE_TABS = ["All", ...DIAMOND_SHAPE_TABS];
 
 function Diamond() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchParams, setSearchParams] = useSearchParams();
   const shapeFromUrl = searchParams.get("shape");
-  const shapes = ["All", "Round", "Princess", "Emerald", "Asscher", "Cushion", "Marquise", "Radiant", "Oval", "Pear", "Heart"];
   const [activeShape, setActiveShape] = useState(
-    shapeFromUrl && shapes.includes(shapeFromUrl) ? shapeFromUrl : "All",
+    shapeFromUrl && SHAPE_TABS.includes(shapeFromUrl) ? shapeFromUrl : "All",
   );
   const scrollRef = useRef(null);
   const gridRef = useRef(null);
   const isotopeRef = useRef(null);
 
+  const displayProducts = useMemo(
+    () => [...products].sort(compareProductsByStoneShape),
+    [products],
+  );
+
+  const matchingCount = useMemo(() => {
+    if (activeShape === "All") return displayProducts.length;
+    return displayProducts.filter((p) =>
+      productMatchesDiamondShape(p, activeShape),
+    ).length;
+  }, [displayProducts, activeShape]);
+
   useEffect(() => {
-    if (shapeFromUrl && shapes.includes(shapeFromUrl)) {
+    if (shapeFromUrl && SHAPE_TABS.includes(shapeFromUrl)) {
       setActiveShape(shapeFromUrl);
     } else if (!shapeFromUrl) {
       setActiveShape("All");
@@ -49,7 +68,7 @@ function Diamond() {
   }, []);
 
   useEffect(() => {
-    if (loading || !gridRef.current || products.length === 0) return undefined;
+    if (loading || !gridRef.current || displayProducts.length === 0) return undefined;
 
     isotopeRef.current?.destroy();
     isotopeRef.current = new Isotope(gridRef.current, {
@@ -63,14 +82,15 @@ function Diamond() {
       isotopeRef.current?.destroy();
       isotopeRef.current = null;
     };
-  }, [loading, products]);
+  }, [loading, displayProducts]);
 
   useEffect(() => {
     if (!isotopeRef.current) return;
     const filter =
-      activeShape === 'All' ? '*' : `.shape-${activeShape.toLowerCase()}`;
+      activeShape === 'All' ? '*' : `.${shapeFilterClass(activeShape)}`;
     isotopeRef.current.arrange({ filter });
-  }, [activeShape, products, loading]);
+    isotopeRef.current.layout();
+  }, [activeShape, displayProducts, loading]);
 
   return (
     <div>
@@ -123,7 +143,7 @@ function Diamond() {
               <style>{`
                 .flex::-webkit-scrollbar { display: none; }
               `}</style>
-              {shapes.map(shape => (
+              {SHAPE_TABS.map(shape => (
                 <button 
                   key={shape} 
                   onClick={(e) => {
@@ -149,13 +169,17 @@ function Diamond() {
 
         {loading ? (
           <div className="py-20 text-center text-xl">Loading products...</div>
-        ) : products.length === 0 ? (
+        ) : displayProducts.length === 0 ? (
           <div className="py-20 text-center text-xl text-[#7A7A7A]">No products found.</div>
+        ) : matchingCount === 0 ? (
+          <div className="py-20 text-center text-xl text-[#7A7A7A]">
+            No products with stone shape &ldquo;{activeShape}&rdquo;.
+          </div>
         ) : (
           <div ref={gridRef} className="relative w-full -mx-2 md:-mx-3">
-            {products.map((product) => {
+            {displayProducts.map((product) => {
               const shapeClasses = getProductShapes(product)
-                .map((s) => `shape-${s.toLowerCase()}`)
+                .map((s) => shapeFilterClass(s))
                 .join(' ');
               return (
                 <div
@@ -172,7 +196,7 @@ function Diamond() {
                       <img
                         src={productImageUrl(product.primaryImage)}
                         alt={product.name}
-                        className="object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500 w-full"
+                        className="object-cover h-[280px] mix-blend-multiply group-hover:scale-110 transition-transform duration-500 w-full"
                         onLoad={() => isotopeRef.current?.layout()}
                       />
                     ) : (

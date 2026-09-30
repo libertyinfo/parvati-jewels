@@ -3,6 +3,7 @@ const fs = require('fs');
 require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 const { PrismaClient } = require('@prisma/client');
+const { enrichProductRecord } = require('./lib/enrichProductRecord');
 const prisma = new PrismaClient();
 
 const JSON_CATEGORY_TO_SLUG = {
@@ -96,24 +97,30 @@ async function ensureCategories(categorySlugs) {
   return bySlug;
 }
 
-async function upsertProduct(item, categoryId) {
+async function upsertProduct(rawItem, categoryId) {
+  const item = enrichProductRecord(rawItem);
   const sku = `${item.slug}-default`;
   const imageUrl = resolveProductImageUrl(item);
 
+  const productPayload = {
+    name: item.name,
+    description: item.description,
+    shortDescription: item.shortDescription,
+    material: item.material,
+    brand: item.brand,
+    rating: item.rating,
+    reviewCount: item.reviewCount,
+    isBestseller: item.isBestseller,
+    isFeatured: item.isFeatured,
+    categoryId,
+  };
+
   const product = await prisma.product.upsert({
     where: { slug: item.slug },
-    update: {
-      name: item.name,
-      description: item.description,
-      isBestseller: Boolean(item.isBestseller),
-      categoryId,
-    },
+    update: productPayload,
     create: {
-      name: item.name,
       slug: item.slug,
-      description: item.description,
-      isBestseller: Boolean(item.isBestseller),
-      categoryId,
+      ...productPayload,
     },
   });
 
@@ -128,13 +135,24 @@ async function upsertProduct(item, categoryId) {
     },
   });
 
+  const specifications = JSON.stringify(item.specifications);
+
+  const variantPayload = {
+    price: item.price,
+    comparePrice: item.comparePrice,
+    metal: item.metal,
+    size: item.size,
+    stock: item.stock,
+    specifications,
+  };
+
   await prisma.productVariant.upsert({
     where: { sku },
-    update: { price: Number(item.price) },
+    update: variantPayload,
     create: {
       productId: product.id,
       sku,
-      price: Number(item.price),
+      ...variantPayload,
     },
   });
 }

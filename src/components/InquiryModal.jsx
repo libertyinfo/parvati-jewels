@@ -508,11 +508,15 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                     {product?.name || 'Wedding Ring 18K'}
                   </h3>
 
-                  {product?.variants && product.variants.length > 0 && (
-                    <p className="2xl:mb-5 md:mb-6 mb-3 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
-                      ${Math.min(...product.variants.map(v => v.price)).toFixed(2)} – ${Math.max(...product.variants.map(v => v.price)).toFixed(2)}
-                    </p>
-                  )}
+                  {product?.variants && product.variants.length > 0 && (() => {
+                    const minPrice = Math.min(...product.variants.map(v => v.price));
+                    const maxPrice = Math.max(...product.variants.map(v => v.price));
+                    return (
+                      <p className="2xl:mb-5 md:mb-6 mb-3 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
+                        ${minPrice.toFixed(2)} {maxPrice > minPrice ? `– $${maxPrice.toFixed(2)}` : ''}
+                      </p>
+                    );
+                  })()}
 
                   <p className="mb-1 text-[13px] text-[#1A1A1A] 2xl:text-[16px]">
                     Metal
@@ -551,25 +555,13 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
               </div>
 
               <p className="2xl:mb-5 mb-3 text-[13px] font-light leading-[1.8] text-[#1A1A1A]">
-
-                Lorem ipsum dolor sit amet,
-                consectetur elit, sed do eiusmod
-                tempor ut et dolore magna aliqua.
-                Ut ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut
-                ex ea consequat. Irure dolor in in
-                velit esse dolore eu fugiat nulla
-                pariatur.
-
+                {product?.description}
               </p>
-
-              <p className="2xl:mb-10 mb-8 text-[13px] font-light leading-[1.8] text-[#1A1A1A]">
-
-                Lorem ipsum dolor sit amet,
-                consectetur elit, sed do eiusmod
-                tempor ut et dolore magna aliqua.
-
-              </p>
+              {product?.shortDescription && (
+                <p className="2xl:mb-10 mb-8 text-[13px] font-light leading-[1.8] text-[#1A1A1A]">
+                  {product.shortDescription}
+                </p>
+              )}
 
               <input
                 type="text"

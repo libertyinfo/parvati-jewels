@@ -5,9 +5,27 @@
     "slug": "love-ring",
     "category": "rings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 45,
+    "comparePrice": 57.6,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring1.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 17,
+    "size": "7",
+    "stock": 21,
+    "image": "../assets/dummy-data/ring1.webp",
+    "specifications": {
+      "total_diamond_weight": "0.35ct",
+      "stone_shape": "Radiant",
+      "setting": "Diamond Band",
+      "dimensions": "3.8mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 2,
@@ -15,9 +33,27 @@
     "slug": "lock-ring",
     "category": "rings",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 30,
+    "comparePrice": 38.4,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring2.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 24,
+    "size": "8",
+    "stock": 22,
+    "image": "../assets/dummy-data/ring2.webp",
+    "specifications": {
+      "total_diamond_weight": "0.40ct",
+      "stone_shape": "Oval",
+      "setting": "Diamond Band",
+      "dimensions": "4.1mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 3,
@@ -25,9 +61,27 @@
     "slug": "vine-ring",
     "category": "rings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 80,
+    "comparePrice": 102.4,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring3.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 31,
+    "size": "9",
+    "stock": 23,
+    "image": "../assets/dummy-data/ring3.webp",
+    "specifications": {
+      "total_diamond_weight": "0.45ct",
+      "stone_shape": "Radiant",
+      "setting": "Diamond Band",
+      "dimensions": "4.4mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 4,
@@ -35,9 +89,27 @@
     "slug": "wedding-ring",
     "category": "rings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 55,
+    "comparePrice": 70.4,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring4.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 38,
+    "size": "10",
+    "stock": 24,
+    "image": "../assets/dummy-data/ring4.webp",
+    "specifications": {
+      "total_diamond_weight": "0.50ct",
+      "stone_shape": "Princess",
+      "setting": "Diamond Band",
+      "dimensions": "4.7mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 5,
@@ -45,9 +117,27 @@
     "slug": "solitaire-ring",
     "category": "rings",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 480,
+    "comparePrice": 614.4,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring5.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 45,
+    "size": "6",
+    "stock": 25,
+    "image": "../assets/dummy-data/ring5.webp",
+    "specifications": {
+      "total_diamond_weight": "0.55ct",
+      "stone_shape": "Emerald",
+      "setting": "Diamond Band",
+      "dimensions": "5.0mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 6,
@@ -55,9 +145,27 @@
     "slug": "halo-ring",
     "category": "rings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 620,
+    "comparePrice": 793.6,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring6.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 52,
+    "size": "7",
+    "stock": 26,
+    "image": "../assets/dummy-data/ring6.webp",
+    "specifications": {
+      "total_diamond_weight": "0.60ct",
+      "stone_shape": "Princess",
+      "setting": "Diamond Band",
+      "dimensions": "5.3mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 7,
@@ -65,9 +173,27 @@
     "slug": "eternity-ring",
     "category": "rings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 390,
+    "comparePrice": 499.2,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring7.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 59,
+    "size": "8",
+    "stock": 27,
+    "image": "../assets/dummy-data/ring7.webp",
+    "specifications": {
+      "total_diamond_weight": "0.65ct",
+      "stone_shape": "Marquise",
+      "setting": "Diamond Band",
+      "dimensions": "5.6mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 8,
@@ -75,9 +201,27 @@
     "slug": "stackable-ring",
     "category": "rings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 35,
+    "comparePrice": 44.8,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring8.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 66,
+    "size": "9",
+    "stock": 28,
+    "image": "../assets/dummy-data/ring8.webp",
+    "specifications": {
+      "total_diamond_weight": "0.70ct",
+      "stone_shape": "Cushion",
+      "setting": "Diamond Band",
+      "dimensions": "5.9mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 9,
@@ -85,9 +229,27 @@
     "slug": "signet-ring",
     "category": "rings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 260,
+    "comparePrice": 332.8,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring9.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 73,
+    "size": "10",
+    "stock": 29,
+    "image": "../assets/dummy-data/ring9.webp",
+    "specifications": {
+      "total_diamond_weight": "0.75ct",
+      "stone_shape": "Marquise",
+      "setting": "Diamond Band",
+      "dimensions": "3.5mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 10,
@@ -95,9 +257,27 @@
     "slug": "twisted-ring",
     "category": "rings",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 310,
+    "comparePrice": 396.8,
     "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
-    "image": "../assets/dummy-data/ring10.webp"
+    "shortDescription": "Hand-finished ring with brilliant sparkle and a comfortable everyday fit.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 80,
+    "size": "6",
+    "stock": 30,
+    "image": "../assets/dummy-data/ring10.webp",
+    "specifications": {
+      "total_diamond_weight": "0.80ct",
+      "stone_shape": "Radiant",
+      "setting": "Diamond Band",
+      "dimensions": "3.8mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 11,
@@ -105,9 +285,27 @@
     "slug": "drop-diamond-earring",
     "category": "earrings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 120,
+    "comparePrice": 153.6,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring1.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 87,
+    "size": null,
+    "stock": 31,
+    "image": "../assets/dummy-data/earring1.webp",
+    "specifications": {
+      "total_diamond_weight": "0.85ct",
+      "stone_shape": "Marquise",
+      "setting": "Stud Setting",
+      "dimensions": "4.1mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 12,
@@ -115,9 +313,27 @@
     "slug": "diamond-stud-earring",
     "category": "earrings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 290,
+    "comparePrice": 371.2,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring2.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 94,
+    "size": null,
+    "stock": 32,
+    "image": "../assets/dummy-data/earring2.webp",
+    "specifications": {
+      "total_diamond_weight": "0.30ct",
+      "stone_shape": "Pear",
+      "setting": "Stud Setting",
+      "dimensions": "4.4mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 13,
@@ -125,9 +341,27 @@
     "slug": "teardrop-earring",
     "category": "earrings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 240,
+    "comparePrice": 307.2,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring3.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 11,
+    "size": null,
+    "stock": 33,
+    "image": "../assets/dummy-data/earring3.webp",
+    "specifications": {
+      "total_diamond_weight": "0.35ct",
+      "stone_shape": "Princess",
+      "setting": "Stud Setting",
+      "dimensions": "4.7mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 14,
@@ -135,9 +369,27 @@
     "slug": "hoop-earring",
     "category": "earrings",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 150,
+    "comparePrice": 192,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring4.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 18,
+    "size": null,
+    "stock": 34,
+    "image": "../assets/dummy-data/earring4.webp",
+    "specifications": {
+      "total_diamond_weight": "0.40ct",
+      "stone_shape": "Emerald",
+      "setting": "Stud Setting",
+      "dimensions": "5.0mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 15,
@@ -145,9 +397,27 @@
     "slug": "jhumka-earring",
     "category": "earrings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 380,
+    "comparePrice": 486.4,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring5.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 25,
+    "size": null,
+    "stock": 20,
+    "image": "../assets/dummy-data/earring5.webp",
+    "specifications": {
+      "total_diamond_weight": "0.45ct",
+      "stone_shape": "Cushion",
+      "setting": "Stud Setting",
+      "dimensions": "5.3mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 16,
@@ -155,9 +425,27 @@
     "slug": "huggie-earring",
     "category": "earrings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 120,
+    "comparePrice": 153.6,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring6.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 32,
+    "size": null,
+    "stock": 21,
+    "image": "../assets/dummy-data/earring6.webp",
+    "specifications": {
+      "total_diamond_weight": "0.50ct",
+      "stone_shape": "Emerald",
+      "setting": "Stud Setting",
+      "dimensions": "5.6mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 17,
@@ -165,9 +453,27 @@
     "slug": "chandelier-earring",
     "category": "earrings",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 85,
+    "comparePrice": 108.8,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring7.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 39,
+    "size": null,
+    "stock": 22,
+    "image": "../assets/dummy-data/earring7.webp",
+    "specifications": {
+      "total_diamond_weight": "0.55ct",
+      "stone_shape": "Princess",
+      "setting": "Stud Setting",
+      "dimensions": "5.9mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 18,
@@ -175,9 +481,27 @@
     "slug": "pearl-earring",
     "category": "earrings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 210,
+    "comparePrice": 268.8,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring8.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 46,
+    "size": null,
+    "stock": 23,
+    "image": "../assets/dummy-data/earring8.webp",
+    "specifications": {
+      "total_diamond_weight": "0.60ct",
+      "stone_shape": "Marquise",
+      "setting": "Stud Setting",
+      "dimensions": "3.5mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 19,
@@ -185,9 +509,27 @@
     "slug": "cluster-earring",
     "category": "earrings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 340,
+    "comparePrice": 435.2,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring9.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 53,
+    "size": null,
+    "stock": 24,
+    "image": "../assets/dummy-data/earring9.webp",
+    "specifications": {
+      "total_diamond_weight": "0.65ct",
+      "stone_shape": "Round",
+      "setting": "Stud Setting",
+      "dimensions": "3.8mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 20,
@@ -195,9 +537,27 @@
     "slug": "ear-cuff",
     "category": "earrings",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 95,
+    "comparePrice": 121.6,
     "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
-    "image": "../assets/dummy-data/earring10.webp"
+    "shortDescription": "Lightweight earrings designed for elegant movement and lasting shine.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 60,
+    "size": null,
+    "stock": 25,
+    "image": "../assets/dummy-data/earring10.webp",
+    "specifications": {
+      "total_diamond_weight": "0.70ct",
+      "stone_shape": "Cushion",
+      "setting": "Stud Setting",
+      "dimensions": "4.1mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 21,
@@ -205,9 +565,27 @@
     "slug": "tennis-bracelet",
     "category": "bracelets",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 890,
+    "comparePrice": 1139.2,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet1.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 67,
+    "size": null,
+    "stock": 26,
+    "image": "../assets/dummy-data/bracelet1.webp",
+    "specifications": {
+      "total_diamond_weight": "0.75ct",
+      "stone_shape": "Oval",
+      "setting": "Tennis Setting",
+      "dimensions": "4.4mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 22,
@@ -215,9 +593,27 @@
     "slug": "chain-bracelet",
     "category": "bracelets",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 210,
+    "comparePrice": 268.8,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet2.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 74,
+    "size": null,
+    "stock": 27,
+    "image": "../assets/dummy-data/bracelet2.webp",
+    "specifications": {
+      "total_diamond_weight": "0.80ct",
+      "stone_shape": "Princess",
+      "setting": "Tennis Setting",
+      "dimensions": "4.7mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 23,
@@ -225,9 +621,27 @@
     "slug": "charm-bangle",
     "category": "bracelets",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 65,
+    "comparePrice": 83.2,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet3.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 81,
+    "size": null,
+    "stock": 28,
+    "image": "../assets/dummy-data/bracelet3.webp",
+    "specifications": {
+      "total_diamond_weight": "0.85ct",
+      "stone_shape": "Emerald",
+      "setting": "Tennis Setting",
+      "dimensions": "5.0mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 24,
@@ -235,9 +649,27 @@
     "slug": "cuff-bracelet",
     "category": "bracelets",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 320,
+    "comparePrice": 409.6,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet4.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 88,
+    "size": null,
+    "stock": 29,
+    "image": "../assets/dummy-data/bracelet4.webp",
+    "specifications": {
+      "total_diamond_weight": "0.30ct",
+      "stone_shape": "Cushion",
+      "setting": "Tennis Setting",
+      "dimensions": "5.3mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 25,
@@ -245,9 +677,27 @@
     "slug": "pearl-bracelet",
     "category": "bracelets",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 180,
+    "comparePrice": 230.4,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet5.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 95,
+    "size": null,
+    "stock": 30,
+    "image": "../assets/dummy-data/bracelet5.webp",
+    "specifications": {
+      "total_diamond_weight": "0.35ct",
+      "stone_shape": "Pear",
+      "setting": "Tennis Setting",
+      "dimensions": "5.6mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 26,
@@ -255,9 +705,27 @@
     "slug": "bead-bracelet",
     "category": "bracelets",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 75,
+    "comparePrice": 96,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet6.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 12,
+    "size": null,
+    "stock": 31,
+    "image": "../assets/dummy-data/bracelet6.webp",
+    "specifications": {
+      "total_diamond_weight": "0.40ct",
+      "stone_shape": "Princess",
+      "setting": "Tennis Setting",
+      "dimensions": "5.9mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 27,
@@ -265,9 +733,27 @@
     "slug": "link-bracelet",
     "category": "bracelets",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 280,
+    "comparePrice": 358.4,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet7.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 19,
+    "size": null,
+    "stock": 32,
+    "image": "../assets/dummy-data/bracelet7.webp",
+    "specifications": {
+      "total_diamond_weight": "0.45ct",
+      "stone_shape": "Marquise",
+      "setting": "Tennis Setting",
+      "dimensions": "3.5mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 28,
@@ -275,9 +761,27 @@
     "slug": "bangle-set",
     "category": "bracelets",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 120,
+    "comparePrice": 153.6,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet8.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 26,
+    "size": null,
+    "stock": 33,
+    "image": "../assets/dummy-data/bracelet8.webp",
+    "specifications": {
+      "total_diamond_weight": "0.50ct",
+      "stone_shape": "Oval",
+      "setting": "Tennis Setting",
+      "dimensions": "3.8mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 29,
@@ -285,9 +789,27 @@
     "slug": "snake-chain",
     "category": "bracelets",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 310,
+    "comparePrice": 396.8,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet9.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 33,
+    "size": null,
+    "stock": 34,
+    "image": "../assets/dummy-data/bracelet9.webp",
+    "specifications": {
+      "total_diamond_weight": "0.55ct",
+      "stone_shape": "Princess",
+      "setting": "Tennis Setting",
+      "dimensions": "4.1mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 30,
@@ -295,9 +817,27 @@
     "slug": "leather-bracelet",
     "category": "bracelets",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 150,
+    "comparePrice": 192,
     "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
-    "image": "../assets/dummy-data/bracelet10.webp"
+    "shortDescription": "A refined bracelet profile that layers beautifully or wears solo.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 40,
+    "size": null,
+    "stock": 20,
+    "image": "../assets/dummy-data/bracelet10.webp",
+    "specifications": {
+      "total_diamond_weight": "0.60ct",
+      "stone_shape": "Cushion",
+      "setting": "Tennis Setting",
+      "dimensions": "4.4mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 31,
@@ -305,9 +845,27 @@
     "slug": "layered-necklace",
     "category": "necklaces",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 180,
+    "comparePrice": 230.4,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace1.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 47,
+    "size": null,
+    "stock": 21,
+    "image": "../assets/dummy-data/necklace1.webp",
+    "specifications": {
+      "total_diamond_weight": "0.65ct",
+      "stone_shape": "Emerald",
+      "setting": "Pendant Setting",
+      "dimensions": "4.7mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 32,
@@ -315,9 +873,27 @@
     "slug": "pearl-necklace",
     "category": "necklaces",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 320,
+    "comparePrice": 409.6,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace2.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 54,
+    "size": null,
+    "stock": 22,
+    "image": "../assets/dummy-data/necklace2.webp",
+    "specifications": {
+      "total_diamond_weight": "0.70ct",
+      "stone_shape": "Pear",
+      "setting": "Pendant Setting",
+      "dimensions": "5.0mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 33,
@@ -325,9 +901,27 @@
     "slug": "diamond-necklace",
     "category": "necklaces",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 650,
+    "comparePrice": 832,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace3.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 61,
+    "size": null,
+    "stock": 23,
+    "image": "../assets/dummy-data/necklace3.webp",
+    "specifications": {
+      "total_diamond_weight": "0.75ct",
+      "stone_shape": "Emerald",
+      "setting": "Pendant Setting",
+      "dimensions": "5.3mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 34,
@@ -335,9 +929,27 @@
     "slug": "mangalsutra-necklace",
     "category": "necklaces",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 380,
+    "comparePrice": 486.4,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace4.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 68,
+    "size": null,
+    "stock": 24,
+    "image": "../assets/dummy-data/necklace4.webp",
+    "specifications": {
+      "total_diamond_weight": "0.80ct",
+      "stone_shape": "Princess",
+      "setting": "Pendant Setting",
+      "dimensions": "5.6mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 35,
@@ -345,9 +957,27 @@
     "slug": "statement-necklace",
     "category": "necklaces",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 420,
+    "comparePrice": 537.6,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace5.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 75,
+    "size": null,
+    "stock": 25,
+    "image": "../assets/dummy-data/necklace5.webp",
+    "specifications": {
+      "total_diamond_weight": "0.85ct",
+      "stone_shape": "Princess",
+      "setting": "Pendant Setting",
+      "dimensions": "5.9mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 36,
@@ -355,9 +985,27 @@
     "slug": "y-necklace",
     "category": "necklaces",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 290,
+    "comparePrice": 371.2,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace6.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 82,
+    "size": null,
+    "stock": 26,
+    "image": "../assets/dummy-data/necklace6.webp",
+    "specifications": {
+      "total_diamond_weight": "0.30ct",
+      "stone_shape": "Cushion",
+      "setting": "Pendant Setting",
+      "dimensions": "3.5mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 37,
@@ -365,9 +1013,27 @@
     "slug": "initial-necklace",
     "category": "necklaces",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 120,
+    "comparePrice": 153.6,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace7.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "size": null,
+    "stock": 27,
+    "image": "../assets/dummy-data/necklace7.webp",
+    "specifications": {
+      "total_diamond_weight": "0.35ct",
+      "stone_shape": "Oval",
+      "setting": "Pendant Setting",
+      "dimensions": "3.8mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 38,
@@ -375,9 +1041,27 @@
     "slug": "birthstone-necklace",
     "category": "necklaces",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 260,
+    "comparePrice": 332.8,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace8.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 96,
+    "size": null,
+    "stock": 28,
+    "image": "../assets/dummy-data/necklace8.webp",
+    "specifications": {
+      "total_diamond_weight": "0.40ct",
+      "stone_shape": "Princess",
+      "setting": "Pendant Setting",
+      "dimensions": "4.1mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 39,
@@ -385,9 +1069,27 @@
     "slug": "choker-necklace",
     "category": "necklaces",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 190,
+    "comparePrice": 243.2,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace9.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 13,
+    "size": null,
+    "stock": 29,
+    "image": "../assets/dummy-data/necklace9.webp",
+    "specifications": {
+      "total_diamond_weight": "0.45ct",
+      "stone_shape": "Marquise",
+      "setting": "Pendant Setting",
+      "dimensions": "4.4mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 40,
@@ -395,9 +1097,27 @@
     "slug": "chain-necklace",
     "category": "necklaces",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 140,
+    "comparePrice": 179.2,
     "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
-    "image": "../assets/dummy-data/necklace10.webp"
+    "shortDescription": "Necklace styling with balanced length and a polished focal point.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 20,
+    "size": null,
+    "stock": 30,
+    "image": "../assets/dummy-data/necklace10.webp",
+    "specifications": {
+      "total_diamond_weight": "0.50ct",
+      "stone_shape": "Marquise",
+      "setting": "Pendant Setting",
+      "dimensions": "4.7mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 41,
@@ -405,9 +1125,27 @@
     "slug": "om-pendant",
     "category": "pendants",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 95,
+    "comparePrice": 121.6,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant1.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 27,
+    "size": null,
+    "stock": 31,
+    "image": "../assets/dummy-data/pendant1.webp",
+    "specifications": {
+      "total_diamond_weight": "0.55ct",
+      "stone_shape": "Cushion",
+      "setting": "Bail Setting",
+      "dimensions": "5.0mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 42,
@@ -415,9 +1153,27 @@
     "slug": "ganesh-pendant",
     "category": "pendants",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 120,
+    "comparePrice": 153.6,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant2.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 34,
+    "size": null,
+    "stock": 32,
+    "image": "../assets/dummy-data/pendant2.webp",
+    "specifications": {
+      "total_diamond_weight": "0.60ct",
+      "stone_shape": "Princess",
+      "setting": "Bail Setting",
+      "dimensions": "5.3mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 43,
@@ -425,9 +1181,27 @@
     "slug": "cross-pendant",
     "category": "pendants",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 85,
+    "comparePrice": 108.8,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant3.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 41,
+    "size": null,
+    "stock": 33,
+    "image": "../assets/dummy-data/pendant3.webp",
+    "specifications": {
+      "total_diamond_weight": "0.65ct",
+      "stone_shape": "Oval",
+      "setting": "Bail Setting",
+      "dimensions": "5.6mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 44,
@@ -435,9 +1209,27 @@
     "slug": "leaf-pendant",
     "category": "pendants",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 75,
+    "comparePrice": 96,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant4.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 48,
+    "size": null,
+    "stock": 34,
+    "image": "../assets/dummy-data/pendant4.webp",
+    "specifications": {
+      "total_diamond_weight": "0.70ct",
+      "stone_shape": "Pear",
+      "setting": "Bail Setting",
+      "dimensions": "5.9mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 45,
@@ -445,9 +1237,27 @@
     "slug": "infinity-pendant",
     "category": "pendants",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 110,
+    "comparePrice": 140.8,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant5.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 55,
+    "size": null,
+    "stock": 20,
+    "image": "../assets/dummy-data/pendant5.webp",
+    "specifications": {
+      "total_diamond_weight": "0.75ct",
+      "stone_shape": "Cushion",
+      "setting": "Bail Setting",
+      "dimensions": "3.5mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 46,
@@ -455,9 +1265,27 @@
     "slug": "lotus-pendant",
     "category": "pendants",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 95,
+    "comparePrice": 121.6,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant6.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 62,
+    "size": null,
+    "stock": 21,
+    "image": "../assets/dummy-data/pendant6.webp",
+    "specifications": {
+      "total_diamond_weight": "0.80ct",
+      "stone_shape": "Emerald",
+      "setting": "Bail Setting",
+      "dimensions": "3.8mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 47,
@@ -465,9 +1293,27 @@
     "slug": "star-pendant",
     "category": "pendants",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 90,
+    "comparePrice": 115.2,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant7.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 69,
+    "size": null,
+    "stock": 22,
+    "image": "../assets/dummy-data/pendant7.webp",
+    "specifications": {
+      "total_diamond_weight": "0.85ct",
+      "stone_shape": "Radiant",
+      "setting": "Bail Setting",
+      "dimensions": "4.1mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 48,
@@ -475,9 +1321,27 @@
     "slug": "heart-pendant",
     "category": "pendants",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 130,
+    "comparePrice": 166.4,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant8.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 76,
+    "size": null,
+    "stock": 23,
+    "image": "../assets/dummy-data/pendant8.webp",
+    "specifications": {
+      "total_diamond_weight": "0.30ct",
+      "stone_shape": "Heart",
+      "setting": "Bail Setting",
+      "dimensions": "4.4mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 49,
@@ -485,9 +1349,27 @@
     "slug": "tree-pendant",
     "category": "pendants",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 120,
+    "comparePrice": 153.6,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant9.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 83,
+    "size": null,
+    "stock": 24,
+    "image": "../assets/dummy-data/pendant9.webp",
+    "specifications": {
+      "total_diamond_weight": "0.35ct",
+      "stone_shape": "Cushion",
+      "setting": "Bail Setting",
+      "dimensions": "4.7mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 50,
@@ -495,9 +1377,27 @@
     "slug": "evil-eye-pendant",
     "category": "pendants",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 85,
+    "comparePrice": 108.8,
     "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
-    "image": "../assets/dummy-data/pendant10.webp"
+    "shortDescription": "Pendant design with fine detailing, ideal for daily wear or gifting.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 90,
+    "size": null,
+    "stock": 25,
+    "image": "../assets/dummy-data/pendant10.webp",
+    "specifications": {
+      "total_diamond_weight": "0.40ct",
+      "stone_shape": "Emerald",
+      "setting": "Bail Setting",
+      "dimensions": "5.0mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 51,
@@ -505,9 +1405,27 @@
     "slug": "round-cut-diamond",
     "category": "diamonds",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 1200,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/earring2.webp"
+    "comparePrice": 1536,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 97,
+    "size": null,
+    "stock": 26,
+    "image": "../assets/dummy-data/earring2.webp",
+    "specifications": {
+      "total_diamond_weight": "0.45ct",
+      "stone_shape": "Cushion",
+      "setting": "Loose Stone",
+      "dimensions": "5.3mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 52,
@@ -515,9 +1433,27 @@
     "slug": "princess-cut-diamond",
     "category": "diamonds",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 980,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/earring3.webp"
+    "comparePrice": 1254.4,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 14,
+    "size": null,
+    "stock": 27,
+    "image": "../assets/dummy-data/earring3.webp",
+    "specifications": {
+      "total_diamond_weight": "0.50ct",
+      "stone_shape": "Asscher",
+      "setting": "Loose Stone",
+      "dimensions": "5.6mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 53,
@@ -525,9 +1461,27 @@
     "slug": "emerald-cut-diamond",
     "category": "diamonds",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 1100,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/earring4.webp"
+    "comparePrice": 1408,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 21,
+    "size": null,
+    "stock": 28,
+    "image": "../assets/dummy-data/earring4.webp",
+    "specifications": {
+      "total_diamond_weight": "0.55ct",
+      "stone_shape": "Cushion",
+      "setting": "Loose Stone",
+      "dimensions": "5.9mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 54,
@@ -535,9 +1489,27 @@
     "slug": "asscher-cut-diamond",
     "category": "diamonds",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 1050,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/earring5.webp"
+    "comparePrice": 1344,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 28,
+    "size": null,
+    "stock": 29,
+    "image": "../assets/dummy-data/earring5.webp",
+    "specifications": {
+      "total_diamond_weight": "0.60ct",
+      "stone_shape": "Heart",
+      "setting": "Loose Stone",
+      "dimensions": "3.5mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 55,
@@ -545,9 +1517,27 @@
     "slug": "cushion-cut-diamond",
     "category": "diamonds",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 990,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/earring6.webp"
+    "comparePrice": 1267.2,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 35,
+    "size": null,
+    "stock": 30,
+    "image": "../assets/dummy-data/earring6.webp",
+    "specifications": {
+      "total_diamond_weight": "0.65ct",
+      "stone_shape": "Cushion",
+      "setting": "Loose Stone",
+      "dimensions": "3.8mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 56,
@@ -555,9 +1545,27 @@
     "slug": "marquise-cut-diamond",
     "category": "diamonds",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 1020,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/earring7.webp"
+    "comparePrice": 1305.6,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 42,
+    "size": null,
+    "stock": 31,
+    "image": "../assets/dummy-data/earring7.webp",
+    "specifications": {
+      "total_diamond_weight": "0.70ct",
+      "stone_shape": "Pear",
+      "setting": "Loose Stone",
+      "dimensions": "4.1mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 57,
@@ -565,9 +1573,27 @@
     "slug": "radiant-cut-diamond",
     "category": "diamonds",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 1080,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/earring8.webp"
+    "comparePrice": 1382.4,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "18K White Gold",
+    "metal": "18K White Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 49,
+    "size": null,
+    "stock": 32,
+    "image": "../assets/dummy-data/earring8.webp",
+    "specifications": {
+      "total_diamond_weight": "0.75ct",
+      "stone_shape": "Cushion",
+      "setting": "Loose Stone",
+      "dimensions": "4.4mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 58,
@@ -575,9 +1601,27 @@
     "slug": "oval-cut-diamond",
     "category": "diamonds",
     "isBestseller": true,
+    "isFeatured": true,
     "price": 1150,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/earring9.webp"
+    "comparePrice": 1472,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "18K Rose Gold",
+    "metal": "18K Rose Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 56,
+    "size": null,
+    "stock": 33,
+    "image": "../assets/dummy-data/earring9.webp",
+    "specifications": {
+      "total_diamond_weight": "0.80ct",
+      "stone_shape": "Cushion",
+      "setting": "Loose Stone",
+      "dimensions": "4.7mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 59,
@@ -585,9 +1629,27 @@
     "slug": "pear-cut-diamond",
     "category": "diamonds",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 970,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/earring10.webp"
+    "comparePrice": 1241.6,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "Platinum",
+    "metal": "Platinum",
+    "brand": "Parvati Jewels",
+    "rating": 4.5,
+    "reviewCount": 63,
+    "size": null,
+    "stock": 34,
+    "image": "../assets/dummy-data/earring10.webp",
+    "specifications": {
+      "total_diamond_weight": "0.85ct",
+      "stone_shape": "Radiant",
+      "setting": "Loose Stone",
+      "dimensions": "5.0mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   },
   {
     "id": 60,
@@ -595,8 +1657,26 @@
     "slug": "heart-cut-diamond",
     "category": "diamonds",
     "isBestseller": false,
+    "isFeatured": false,
     "price": 1120,
-    "description": "Premium loose diamond with exceptional brilliance and clarity.",
-    "image": "../assets/dummy-data/pendant8.webp"
+    "comparePrice": 1433.6,
+    "description": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "shortDescription": "Certified loose diamond selected for cut, clarity, and brilliance.",
+    "material": "18K Yellow Gold",
+    "metal": "18K Yellow Gold",
+    "brand": "Parvati Jewels",
+    "rating": 4,
+    "reviewCount": 70,
+    "size": null,
+    "stock": 20,
+    "image": "../assets/dummy-data/pendant8.webp",
+    "specifications": {
+      "total_diamond_weight": "0.30ct",
+      "stone_shape": "Marquise",
+      "setting": "Loose Stone",
+      "dimensions": "5.3mm",
+      "diamond_quality": "H/SI",
+      "nickel_free": "Yes"
+    }
   }
 ]

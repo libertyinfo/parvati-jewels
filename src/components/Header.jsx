@@ -98,6 +98,7 @@ function Header({ setInquiryState }) {
                     <img src={heartDropdown} alt="Heart" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Heart</span>
                   </Link>
+                  
                 </div>
               </div>
             </div>

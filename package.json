@@ -11,6 +11,8 @@
     "db:migrate:dev": "npm run db:migrate:dev --prefix server",
     "db:seed": "npm run db:seed --prefix server",
     "images:sync": "npm run images:sync --prefix server",
+    "specs:sync": "npm run specs:sync --prefix server",
+    "products:enrich-json": "npm run products:enrich-json --prefix server",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

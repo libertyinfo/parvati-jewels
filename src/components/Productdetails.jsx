@@ -5,6 +5,11 @@ import ScrollReveal from './ScrollReveal';
 import starIcon from '../assets/icons/star.svg';
 import { fetchJson } from '../lib/api';
 import { productImageUrl } from '../lib/productImage';
+import {
+  parseProductSpecifications,
+  orderedSpecificationEntries,
+  specificationLabel,
+} from '../lib/productSpecifications';
        
 function Productdetails({ setInquiryState }) {
   const { slug } = useParams();
@@ -39,12 +44,8 @@ function Productdetails({ setInquiryState }) {
     maxPrice = Math.max(...prices);
   }
 
-  let specs = {};
-  if (product.variants && product.variants.length > 0 && product.variants[0].specifications) {
-    try {
-      specs = JSON.parse(product.variants[0].specifications);
-    } catch(e) {}
-  }
+  const specs = parseProductSpecifications(product.variants?.[0]?.specifications);
+  const specEntries = orderedSpecificationEntries(specs);
 
   return (
     <div>
@@ -95,9 +96,14 @@ function Productdetails({ setInquiryState }) {
               </p>
             )}
             
-            <p className="text-[#1A1A1A] text-[14px] 2xl:text-[16px] font-medium xl:mb-6 mb-4">
-              Metal: <span className="text-[#000000] font-light ml-1">{product.material}</span>
-            </p>
+            {(product.material || product.variants?.[0]?.metal) && (
+              <p className="text-[#1A1A1A] text-[14px] 2xl:text-[16px] font-medium xl:mb-6 mb-4">
+                Metal:{' '}
+                <span className="text-[#000000] font-light ml-1">
+                  {product.material || product.variants[0].metal}
+                </span>
+              </p>
+            )}
 
             <div className="flex gap-1.5 2xl:mb-8 mb-6">
               {[1, 2, 3, 4, 5].map((star) => (
@@ -121,12 +127,18 @@ function Productdetails({ setInquiryState }) {
             <div className="w-full h-px bg-[#9C9C9C] 2xl:mb-6 mb-4"></div>
 
             <div className="grid grid-cols-2 2xl:gap-y-5 xl:gap-y-4 gap-y-3 gap-x-4 xl:mb-6 mb-2">
-              {Object.entries(specs).map(([key, value]) => (
-                <div key={key}>
-                  <p className="text-[#1A1A1A] text-[13px] 2xl:text-[16px] mb-1 capitalize">{key.replace(/_/g, ' ')}</p>
-                  <p className="text-[#3D3D3D] text-[13px] 2xl:text-[16px] font-light">{value}</p>
-                </div>
-              ))}
+              {specEntries.length === 0 ? (
+                <p className="col-span-2 text-[#7A7A7A] text-[13px] 2xl:text-[16px] font-light">
+                  Specifications coming soon.
+                </p>
+              ) : (
+                specEntries.map(([key, value]) => (
+                  <div key={key}>
+                    <p className="text-[#1A1A1A] text-[13px] 2xl:text-[16px] mb-1">{specificationLabel(key)}</p>
+                    <p className="text-[#3D3D3D] text-[13px] 2xl:text-[16px] font-light">{value}</p>
+                  </div>
+                ))
+              )}
             </div>
 
             <p className="text-[#1A1A1A] text-[12px] md:text-[14px] 2xl:text-[16px] font-light 2xl:mt-auto xl:mt-4 mt-2">

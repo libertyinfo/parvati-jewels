@@ -6,6 +6,8 @@ const cors = require('cors');
 const { PrismaClient } = require('@prisma/client');
 const nodemailer = require('nodemailer');
 
+const { pickStoneShape, STONE_SHAPES } = require('./lib/productSpecifications');
+
 const prisma = new PrismaClient();
 const app = express();
 
@@ -58,6 +60,19 @@ app.get('/api/products', async (req, res) => {
       }
     });
 
+    const parseStoneShape = (variant) => {
+      if (!variant?.specifications) return null;
+      try {
+        const specs =
+          typeof variant.specifications === 'string'
+            ? JSON.parse(variant.specifications)
+            : variant.specifications;
+        return specs.stone_shape || null;
+      } catch {
+        return null;
+      }
+    };
+
     // Format products for listing
     const formattedProducts = products.map(product => {
       let minPrice = 0;
@@ -67,16 +82,28 @@ app.get('/api/products', async (req, res) => {
         minPrice = Math.min(...prices);
         maxPrice = Math.max(...prices);
       }
-      
+
       return {
         id: product.id,
         name: product.name,
         slug: product.slug,
         isBestseller: product.isBestseller,
         primaryImage: product.images[0]?.imageUrl || null,
+        stoneShape:
+          parseStoneShape(product.variants[0]) ||
+          pickStoneShape({ id: product.id, slug: product.slug }),
         minPrice,
         maxPrice
       };
+    });
+
+    formattedProducts.sort((a, b) => {
+      const ia = STONE_SHAPES.indexOf(a.stoneShape || '');
+      const ib = STONE_SHAPES.indexOf(b.stoneShape || '');
+      const orderA = ia === -1 ? STONE_SHAPES.length : ia;
+      const orderB = ib === -1 ? STONE_SHAPES.length : ib;
+      if (orderA !== orderB) return orderA - orderB;
+      return String(a.name).localeCompare(String(b.name));
     });
 
     res.json(formattedProducts);
