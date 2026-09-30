@@ -54,8 +54,8 @@ function Productdetails({ setInquiryState }) {
         <div className="container mx-auto px-6 2xl:py-14 md:py-10 py-5">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
           
-          <ScrollReveal animation="fade-up" duration={900} delay={150} className="2xl:w-[828px] xl:w-[785px] lg:w-[765px] md:w-[720px] w-full flex flex-col">
-            <div className="w-full 2xl:h-[714px] xl:h-[655px] h-[260px] md:h-[595px] flex items-center justify-center overflow-hidden md:mb-8 mb-5">
+          <ScrollReveal animation="fade-up" duration={900} delay={150} className="2xl:w-[785px] xl:w-[785px] lg:w-[765px] md:w-[720px] w-full flex flex-col">
+            <div className="w-full 2xl:h-[600px] xl:h-[655px] h-[260px] md:h-[595px] flex items-center justify-center overflow-hidden md:mb-8 mb-5">
               <img src={productImageUrl(images[activeIndex]?.imageUrl)} alt="Main product view" className="w-full h-full object-cover transition-opacity duration-500" />
             </div>
             

@@ -52,9 +52,9 @@ function Productlist() {
   return (
     <div className='lg:pb-20 pb-10'>
         {/* Hero */}
-        <section className="relative 3xl:h-[350px] 2xl:h-[400px] xl:h-[380px] lg:h-[307px] h-auto min-h-[240px] flex flex-col md:flex-row items-center overflow-hidden bg-[#227b8e] py-6 md:py-0">
-          <div className="absolute right-0 top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
-          <ScrollReveal animation="fade-left" duration={900} delay={150} className="relative z-0 md:absolute w-[250px] sm:w-[300px] md:w-[404px] lg:w-[515px] xl:w-[638px] 2xl:w-[672px] 3xl:w-[38%] 2xl:right-[12%] 3xl:right-[10%] xl:right-[5%] lg:right-[2%] right-[0%] mt-4 md:mt-0 opacity-100 mx-auto flex justify-center">
+        <section className="relative 3xl:h-[350px] 2xl:h-[400px] xl:h-[380px] lg:h-[307px] md:h-[240px] h-[200px] flex items-center overflow-hidden bg-[#227b8e]">
+          <div className="absolute right-[8%] top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
+          <ScrollReveal animation="fade-left" duration={900} delay={150} className="absolute z-0 w-[336px] sm:w-[300px] md:w-[404px] lg:w-[515px] xl:w-[638px] 2xl:w-[672px] 3xl:w-[38%] 2xl:right-[12%] 3xl:right-[10%] xl:right-[5%] lg:right-[2%] right-[0%] opacity-100 mx-auto flex justify-center">
             <img src={currentCategory.banner} alt="productBanner" className="w-full h-auto object-contain" />
           </ScrollReveal>
           <div className="absolute inset-0 bg-black/40 md:hidden z-[5]"></div>

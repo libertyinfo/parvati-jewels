@@ -15,6 +15,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailNotice, setEmailNotice] = useState(null);
 
   const categoryRef = useRef(null);
 
@@ -69,6 +70,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
     });
 
     setIsCategoryOpen(false);
+    setEmailNotice(null);
   };
 
   const handleCategoryChange = (category) => {
@@ -98,12 +100,17 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
     };
 
     try {
-      await fetchJson('/api/inquiries', {
+      const result = await fetchJson('/api/inquiries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(inquiryData),
       });
-      
+
+      setEmailNotice(
+        result.emailSent === false
+          ? 'Your inquiry was saved. We could not send a confirmation email right now; our team will still follow up.'
+          : null,
+      );
       setInquiryState({ isOpen: true, type: 'success' });
     } catch (error) {
       console.error('Error submitting inquiry:', error);
@@ -152,7 +159,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
           <button
             type="button"
             onClick={closeModal}
-            className="absolute right-8 top-8 cursor-pointer text-[#1A1A1A] transition-opacity hover:opacity-70"
+            className="absolute right-8 top-8 cursor-pointer text-[#1A1A1A] transition-opacity hover:opacity-70 p-2"
           >
             <svg
               width="20"
@@ -189,6 +196,12 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 You can expect to hear back from us within
                 48 hours.
               </p>
+
+              {emailNotice && (
+                <p className="mb-8 max-w-md text-[13px] text-[#7A7A7A]">
+                  {emailNotice}
+                </p>
+              )}
 
               <button
                 type="button"

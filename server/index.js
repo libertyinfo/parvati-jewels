@@ -4,21 +4,11 @@ require('dotenv').config({ path: path.join(__dirname, '.env') });
 const express = require('express');
 const cors = require('cors');
 const { PrismaClient } = require('@prisma/client');
-const nodemailer = require('nodemailer');
-
 const { pickStoneShape, STONE_SHAPES } = require('./lib/productSpecifications');
+const { verifySmtpOnStartup, sendInquiryEmails } = require('./lib/inquiryMail');
 
 const prisma = new PrismaClient();
 const app = express();
-
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST || 'smtp.ethereal.email',
-  port: process.env.SMTP_PORT || 587,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS
-  }
-});
 
 app.use(cors());
 app.use(express.json());
@@ -161,34 +151,22 @@ app.post('/api/inquiries', async (req, res) => {
       if (product) productDetails = `\nProduct Inquired: ${product.name} (ID: ${product.id})`;
     }
 
-    const mailOptions = {
-      from: process.env.SMTP_USER || '"Parvati Jewels" <noreply@parvatijewels.com>',
-      to: 'dhvani.lis21@gmail.com',
-      subject: `New ${type === 'product' ? 'Product' : 'General'} Inquiry from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nType: ${type}\n${metal ? `Metal: ${metal}\n` : ''}${categories && categories.length > 0 ? `Categories: ${categories.join(', ')}\n` : ''}${productDetails}\n\nMessage:\n${message || 'No message provided'}`
-    };
+    const mailResult = await sendInquiryEmails({
+      type,
+      name,
+      email,
+      phone,
+      metal,
+      categories,
+      message,
+      productDetails,
+    });
 
-    const customerMailOptions = {
-      from: process.env.SMTP_USER || '"Parvati Jewels" <noreply@parvatijewels.com>',
-      to: email,
-      subject: `Thank you for your Inquiry - Parvati Jewels`,
-      text: `Dear ${name},\n\nYour inquiry has been submitted successfully. Thank you for reaching out to us. We will get back to you shortly!\n\nBest Regards,\nParvati Jewels`
-    };
-
-    try {
-      if (process.env.SMTP_USER) {
-        await transporter.sendMail(mailOptions);
-        await transporter.sendMail(customerMailOptions);
-      } else {
-        console.log('--- Email Simulation (Configure SMTP in .env to send for real) ---');
-        console.log('Admin Email:', mailOptions);
-        console.log('Customer Email:', customerMailOptions);
-      }
-    } catch (mailError) {
-      console.error('Error sending email:', mailError);
-    }
-
-    res.status(201).json(inquiry);
+    res.status(201).json({
+      ...inquiry,
+      emailSent: mailResult.sent,
+      ...(mailResult.error ? { emailError: mailResult.error } : {}),
+    });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Failed to submit inquiry' });
@@ -198,4 +176,5 @@ app.post('/api/inquiries', async (req, res) => {
 const PORT = process.env.PORT || 5055;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+  verifySmtpOnStartup();
 });

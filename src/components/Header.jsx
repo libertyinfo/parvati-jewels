@@ -28,7 +28,7 @@ function Header({ setInquiryState }) {
   }, [isMenuOpen]);
 
   return (
-    <header className="w-full flex flex-col relative z-50">
+    <header className="w-full flex flex-col bg-white z-50 sticky top-0 left-0 right-0">
       <div className="w-full py-2 border-b border-[#9C9C9C66] bg-[#13778d] hidden">
         <div className="container mx-auto px-6">
           <p className="text-center text-[14px] 3xl:text-[12px] text-[#000000] py-3">
