@@ -92,7 +92,7 @@ function Productlist() {
                     </div>
                   )}
                   {product.primaryImage ? (
-                    <img src={productImageUrl(product.primaryImage)} alt={product.name} className="object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" />
+                    <img src={productImageUrl(product.primaryImage)} alt={product.name} className="object-cover mix-blend-multiply group-hover:scale-110 transition-transform duration-500 h-[280px] w-full" />
                   ) : (
                     <div className="w-full h-[250px] bg-gray-100 flex items-center justify-center text-gray-400">No Image</div>
                   )}
