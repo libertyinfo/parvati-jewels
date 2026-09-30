@@ -4,6 +4,7 @@ import CTA from "./CTA";
 import ScrollReveal from './ScrollReveal';
 import starIcon from '../assets/icons/star.svg';
 import { fetchJson } from '../lib/api';
+import Loader from './Loader';
 import { productImageUrl } from '../lib/productImage';
 import {
   parseProductSpecifications,
@@ -31,7 +32,7 @@ function Productdetails({ setInquiryState }) {
       });
   }, [slug]);
 
-  if (loading) return <div className="py-20 text-center text-xl">Loading product details...</div>;
+  if (loading) return <Loader isLoading={true} />;
   if (error) return <div className="py-20 text-center text-xl text-red-500">{error}</div>;
   if (!product) return <div className="py-20 text-center text-xl">Product not found.</div>;
   

@@ -49,7 +49,7 @@ function Header({ setInquiryState }) {
           <Link to="/category/earrings" className="hover:text-[#0C758C] transition-colors">Earrings</Link>
           <Link to="/category/bracelets" className="hover:text-[#0C758C] transition-colors">Bracelets</Link>
           <Link to="/category/necklace" className="hover:text-[#0C758C] transition-colors">Necklaces</Link>
-          <Link to="/category/pendant" className="hover:text-[#0C758C] transition-colors">Pendant</Link>
+          <Link to="/category/pendant" className="hover:text-[#0C758C] transition-colors">Pendants</Link>
 
           {/* Diamonds Dropdown */}
           <div className="relative group h-full flex items-center">

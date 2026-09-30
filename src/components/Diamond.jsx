@@ -5,6 +5,7 @@ import ScrollReveal from "./ScrollReveal";
 import diamondHero from "../assets/diamond-heroimg.png";
 import bestsellerTag from "../assets/bestsellers.png";
 import { fetchJson } from "../lib/api";
+import Loader from "./Loader";
 import { productImageUrl } from "../lib/productImage";
 import {
   DIAMOND_SHAPE_TABS,
@@ -162,7 +163,7 @@ function Diamond() {
         </div>
 
         {loading ? (
-          <div className="py-20 text-center text-xl">Loading products...</div>
+          <Loader isLoading={true} />
         ) : displayProducts.length === 0 ? (
           <div className="py-20 text-center text-xl text-[#7A7A7A]">No products found.</div>
         ) : matchingCount === 0 ? (

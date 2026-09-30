@@ -4,6 +4,7 @@ import CTA from './CTA'
 import ScrollReveal from './ScrollReveal'
 import bestsellerTag from '../assets/bestsellers.png'
 import { fetchJson } from '../lib/api'
+import Loader from './Loader'
 import { productImageUrl } from '../lib/productImage'
 
 import ringsBanner from '../assets/ring-heroimg.png'
@@ -42,7 +43,7 @@ function Productlist() {
   }, [categorySlug]);
 
   if (loading) {
-    return <div className="py-20 text-center text-xl">Loading products...</div>;
+    return <Loader isLoading={true} />;
   }
   if (error) {
     return <div className="py-20 text-center text-xl text-red-500">Error: {error}</div>;
