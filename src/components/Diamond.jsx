@@ -126,7 +126,7 @@ function Diamond() {
 
       {/* Main Section */}
       <section className="container mx-auto px-6 mt-10 md:mt-16 relative z-20 mb-20">
-        <div className="flex flex-col xl:flex-row xl:items-center justify-between 2xl:my-12 xl:my-7 my-5 gap-4">
+        <div className="grid grid-cols-[200px_auto] items-center 2xl:my-12 xl:my-7 my-5 gap-4">
           <ScrollReveal animation="fade-right" duration={900}>
             <div className="text-[11px] 2xl:text-[16px] md:text-[13px] text-[#7A7A7A] uppercase font-medium">
               <Link to="/" className="hover:text-black transition-colors">HOME</Link> 
@@ -135,11 +135,8 @@ function Diamond() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal animation="fade-left" duration={900} className="w-full xl:w-[450px] 2xl:w-[550px] flex items-center gap-2">
-            <button onClick={() => scrollTabs('left')} className="flex-shrink-0 p-1 text-[#7A7A7A] hover:text-[#0C758C] transition-colors">
-               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
-            </button>
-            <div ref={scrollRef} className="flex overflow-x-auto whitespace-nowrap gap-6 pb-2 sm:pb-0 scroll-smooth flex-1" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <ScrollReveal animation="fade-left" duration={900} className="w-full justify-end flex items-center">
+            <div ref={scrollRef} className="flex flex-wrap gap-4 pb-2 sm:pb-0 scroll-smooth" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               <style>{`
                 .flex::-webkit-scrollbar { display: none; }
               `}</style>
@@ -155,15 +152,12 @@ function Diamond() {
                     }
                     e.target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                   }}
-                  className={`text-[12px] md:text-[14px] 2xl:text-[16px] uppercase tracking-wide transition-colors flex-shrink-0 ${activeShape === shape ? 'text-[#0C758C] font-semibold border-b-2 border-[#0C758C]' : 'text-[#7A7A7A] hover:text-[#0C758C]'}`}
+                  className={`text-[12px] md:text-[14px] uppercase tracking-wide transition-colors flex-shrink-0 cursor-pointer ${activeShape === shape ? 'text-white font-semibold bg-[#0C758C] p-2 rounded-full' : 'text-[#0C758C] hover:bg-[#0C758C] hover:text-white border border-[#0C758C] px-2 py-1 rounded-full'}`}
                 >
                   {shape}
                 </button>
               ))}
             </div>
-            <button onClick={() => scrollTabs('right')} className="flex-shrink-0 p-1 text-[#7A7A7A] hover:text-[#0C758C] transition-colors">
-               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
-            </button>
           </ScrollReveal>
         </div>
 

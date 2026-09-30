@@ -9,8 +9,7 @@ export const DIAMOND_SHAPE_TABS = [
   'Asscher',
   'Pear',
   'Cushion',
-  'Heart',
-  'Wall Art',
+  'Heart'
 ];
 
 /** Shape from API (`stoneShape` ← variant specifications.stone_shape in products.json). */
