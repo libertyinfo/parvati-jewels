@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Productlist from "./components/Productlist";
 import Productdetails from "./components/Productdetails";
 import Contact from "./components/Contact";
+import Diamond from "./components/Diamond";
 import InquiryModal from "./components/InquiryModal";
 import Loader from "./components/Loader";
 
@@ -18,6 +19,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<><Header setInquiryState={setInquiryState} /><Home setInquiryState={setInquiryState} /><Footer /></>} />
+          <Route path="/diamonds" element={<><Header setInquiryState={setInquiryState} /><Diamond /><Footer /></>} />
+          <Route path="/category/diamonds" element={<Navigate to="/diamonds" replace />} />
           <Route path="/category/:categorySlug" element={<><Header setInquiryState={setInquiryState} /><Productlist /><Footer /></>} />
           <Route path="/products/:slug" element={<><Header setInquiryState={setInquiryState} /><Productdetails setInquiryState={setInquiryState} /><Footer /></>} />
           <Route path="/productdetails" element={<><Header setInquiryState={setInquiryState} /><Productdetails setInquiryState={setInquiryState} /><Footer /></>} />

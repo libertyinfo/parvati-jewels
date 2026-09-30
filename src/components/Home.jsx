@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import CTA from './CTA'
 import ScrollReveal from './ScrollReveal'
 import heroImg from '../assets/hero-img.png'
@@ -188,15 +189,20 @@ function Home({ setInquiryState }) {
           </ScrollReveal>
 
           <div className="flex justify-around flex-wrap gap-y-8 lg:gap-y-6">
-            {diamonds.map((diamond, index) => (
+            {diamonds.map((diamond) => (
               <ScrollReveal
                 key={diamond.name}
                 animation="fade-up"
                 delay={100}
                 className="flex flex-col items-center gap-5 xl:gap-6 hover:-translate-y-2 hover:scale-110 transition-all duration-500 ease-out cursor-pointer w-1/2 md:w-1/3 lg:w-auto"
               >
-                <img src={diamond.icon} alt={diamond.name} className="drop-shadow-sm hover:drop-shadow-md transition-all duration-500" />
-                <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">{diamond.name}</p>
+                <Link
+                  to={`/diamonds?shape=${diamond.name}`}
+                  className="flex flex-col items-center gap-5 xl:gap-6"
+                >
+                  <img src={diamond.icon} alt={diamond.name} className="drop-shadow-sm hover:drop-shadow-md transition-all duration-500" />
+                  <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">{diamond.name}</p>
+                </Link>
               </ScrollReveal>
             ))}
           </div>

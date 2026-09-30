@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/icons/logo.svg';
 import ScrollReveal from './ScrollReveal';
 
@@ -17,12 +18,12 @@ function Footer() {
         <ScrollReveal animation="fade-up" delay={150} className="col-span-1 md:col-span-1 flex flex-col mt-8 md:mt-2 items-center md:items-center">
           <h3 className="font-bellefair text-[18px] 2xl:text-[22px] text-white uppercase tracking-[0.15em] mb-6">Catalog</h3>
           <ul className="flex flex-col gap-4 text-[14px] 2xl:text-[16px] font-light text-white/90 md:-ml-[32px] items-center md:items-start text-center md:text-left">
-            <li><a href="#" className="hover:text-white transition-colors">Rings</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Earrings</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Diamonds</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Bracelets</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Neckleces</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Pendants</a></li>
+            <li><Link to="/category/rings" className="hover:text-white transition-colors">Rings</Link></li>
+            <li><Link to="/category/earrings" className="hover:text-white transition-colors">Earrings</Link></li>
+            <li><Link to="/diamonds" className="hover:text-white transition-colors">Diamonds</Link></li>
+            <li><Link to="/category/bracelets" className="hover:text-white transition-colors">Bracelets</Link></li>
+            <li><Link to="/category/necklace" className="hover:text-white transition-colors">Necklaces</Link></li>
+            <li><Link to="/category/pendant" className="hover:text-white transition-colors">Pendants</Link></li>
           </ul>
         </ScrollReveal>
 

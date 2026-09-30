@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "name": "Love Ring",
+    "slug": "love-ring",
+    "category": "rings",
+    "isBestseller": false,
+    "price": 45,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Lock Ring",
+    "slug": "lock-ring",
+    "category": "rings",
+    "isBestseller": true,
+    "price": 30,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring2.webp"
+  },
+  {
+    "id": 3,
+    "name": "Vine Ring",
+    "slug": "vine-ring",
+    "category": "rings",
+    "isBestseller": false,
+    "price": 80,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring3.webp"
+  },
+  {
+    "id": 4,
+    "name": "Wedding Ring",
+    "slug": "wedding-ring",
+    "category": "rings",
+    "isBestseller": false,
+    "price": 55,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring4.webp"
+  },
+  {
+    "id": 5,
+    "name": "Solitaire Ring",
+    "slug": "solitaire-ring",
+    "category": "rings",
+    "isBestseller": true,
+    "price": 480,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring5.webp"
+  },
+  {
+    "id": 6,
+    "name": "Halo Ring",
+    "slug": "halo-ring",
+    "category": "rings",
+    "isBestseller": false,
+    "price": 620,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring6.webp"
+  },
+  {
+    "id": 7,
+    "name": "Eternity Ring",
+    "slug": "eternity-ring",
+    "category": "rings",
+    "isBestseller": false,
+    "price": 390,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring7.webp"
+  },
+  {
+    "id": 8,
+    "name": "Stackable Ring",
+    "slug": "stackable-ring",
+    "category": "rings",
+    "isBestseller": false,
+    "price": 35,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring8.webp"
+  },
+  {
+    "id": 9,
+    "name": "Signet Ring",
+    "slug": "signet-ring",
+    "category": "rings",
+    "isBestseller": false,
+    "price": 260,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring9.webp"
+  },
+  {
+    "id": 10,
+    "name": "Twisted Ring",
+    "slug": "twisted-ring",
+    "category": "rings",
+    "isBestseller": true,
+    "price": 310,
+    "description": "A beautifully crafted ring with a refined finish. Designed to add timeless elegance to every occasion.",
+    "image": "../assets/dummy-data/ring10.webp"
+  },
+  {
+    "id": 11,
+    "name": "Drop Diamond Earring",
+    "slug": "drop-diamond-earring",
+    "category": "earrings",
+    "isBestseller": false,
+    "price": 120,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring1.webp"
+  },
+  {
+    "id": 12,
+    "name": "Diamond Stud Earring",
+    "slug": "diamond-stud-earring",
+    "category": "earrings",
+    "isBestseller": false,
+    "price": 290,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring2.webp"
+  },
+  {
+    "id": 13,
+    "name": "Teardrop Earring",
+    "slug": "teardrop-earring",
+    "category": "earrings",
+    "isBestseller": false,
+    "price": 240,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring3.webp"
+  },
+  {
+    "id": 14,
+    "name": "Hoop Earring",
+    "slug": "hoop-earring",
+    "category": "earrings",
+    "isBestseller": true,
+    "price": 150,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring4.webp"
+  },
+  {
+    "id": 15,
+    "name": "Jhumka Earring",
+    "slug": "jhumka-earring",
+    "category": "earrings",
+    "isBestseller": false,
+    "price": 380,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring5.webp"
+  },
+  {
+    "id": 16,
+    "name": "Huggie Earring",
+    "slug": "huggie-earring",
+    "category": "earrings",
+    "isBestseller": false,
+    "price": 120,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring6.webp"
+  },
+  {
+    "id": 17,
+    "name": "Chandelier Earring",
+    "slug": "chandelier-earring",
+    "category": "earrings",
+    "isBestseller": true,
+    "price": 85,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring7.webp"
+  },
+  {
+    "id": 18,
+    "name": "Pearl Earring",
+    "slug": "pearl-earring",
+    "category": "earrings",
+    "isBestseller": false,
+    "price": 210,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring8.webp"
+  },
+  {
+    "id": 19,
+    "name": "Cluster Earring",
+    "slug": "cluster-earring",
+    "category": "earrings",
+    "isBestseller": false,
+    "price": 340,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring9.webp"
+  },
+  {
+    "id": 20,
+    "name": "Ear Cuff",
+    "slug": "ear-cuff",
+    "category": "earrings",
+    "isBestseller": false,
+    "price": 95,
+    "description": "A graceful jewellery design with elegant detailing and a polished finish. Perfect for everyday style or special occasions.",
+    "image": "../assets/dummy-data/earring10.webp"
+  },
+  {
+    "id": 21,
+    "name": "Tennis Bracelet",
+    "slug": "tennis-bracelet",
+    "category": "bracelets",
+    "isBestseller": true,
+    "price": 890,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet1.webp"
+  },
+  {
+    "id": 22,
+    "name": "Chain Bracelet",
+    "slug": "chain-bracelet",
+    "category": "bracelets",
+    "isBestseller": false,
+    "price": 210,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet2.webp"
+  },
+  {
+    "id": 23,
+    "name": "Charm Bangle",
+    "slug": "charm-bangle",
+    "category": "bracelets",
+    "isBestseller": false,
+    "price": 65,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet3.webp"
+  },
+  {
+    "id": 24,
+    "name": "Cuff Bracelet",
+    "slug": "cuff-bracelet",
+    "category": "bracelets",
+    "isBestseller": true,
+    "price": 320,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet4.webp"
+  },
+  {
+    "id": 25,
+    "name": "Pearl Bracelet",
+    "slug": "pearl-bracelet",
+    "category": "bracelets",
+    "isBestseller": false,
+    "price": 180,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet5.webp"
+  },
+  {
+    "id": 26,
+    "name": "Bead Bracelet",
+    "slug": "bead-bracelet",
+    "category": "bracelets",
+    "isBestseller": false,
+    "price": 75,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet6.webp"
+  },
+  {
+    "id": 27,
+    "name": "Link Bracelet",
+    "slug": "link-bracelet",
+    "category": "bracelets",
+    "isBestseller": true,
+    "price": 280,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet7.webp"
+  },
+  {
+    "id": 28,
+    "name": "Bangle Set",
+    "slug": "bangle-set",
+    "category": "bracelets",
+    "isBestseller": false,
+    "price": 120,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet8.webp"
+  },
+  {
+    "id": 29,
+    "name": "Snake Chain",
+    "slug": "snake-chain",
+    "category": "bracelets",
+    "isBestseller": false,
+    "price": 310,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet9.webp"
+  },
+  {
+    "id": 30,
+    "name": "Leather Bracelet",
+    "slug": "leather-bracelet",
+    "category": "bracelets",
+    "isBestseller": false,
+    "price": 150,
+    "description": "A stylish bracelet designed with a refined silhouette and elegant finish. Easy to wear alone or layer with other pieces.",
+    "image": "../assets/dummy-data/bracelet10.webp"
+  },
+  {
+    "id": 31,
+    "name": "Layered Necklace",
+    "slug": "layered-necklace",
+    "category": "necklaces",
+    "isBestseller": false,
+    "price": 180,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace1.webp"
+  },
+  {
+    "id": 32,
+    "name": "Pearl Necklace",
+    "slug": "pearl-necklace",
+    "category": "necklaces",
+    "isBestseller": true,
+    "price": 320,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace2.webp"
+  },
+  {
+    "id": 33,
+    "name": "Diamond Necklace",
+    "slug": "diamond-necklace",
+    "category": "necklaces",
+    "isBestseller": false,
+    "price": 650,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace3.webp"
+  },
+  {
+    "id": 34,
+    "name": "Mangalsutra Necklace",
+    "slug": "mangalsutra-necklace",
+    "category": "necklaces",
+    "isBestseller": false,
+    "price": 380,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace4.webp"
+  },
+  {
+    "id": 35,
+    "name": "Statement Necklace",
+    "slug": "statement-necklace",
+    "category": "necklaces",
+    "isBestseller": true,
+    "price": 420,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace5.webp"
+  },
+  {
+    "id": 36,
+    "name": "Y Necklace",
+    "slug": "y-necklace",
+    "category": "necklaces",
+    "isBestseller": false,
+    "price": 290,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace6.webp"
+  },
+  {
+    "id": 37,
+    "name": "Initial Necklace",
+    "slug": "initial-necklace",
+    "category": "necklaces",
+    "isBestseller": true,
+    "price": 120,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace7.webp"
+  },
+  {
+    "id": 38,
+    "name": "Birthstone Necklace",
+    "slug": "birthstone-necklace",
+    "category": "necklaces",
+    "isBestseller": false,
+    "price": 260,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace8.webp"
+  },
+  {
+    "id": 39,
+    "name": "Choker Necklace",
+    "slug": "choker-necklace",
+    "category": "necklaces",
+    "isBestseller": false,
+    "price": 190,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace9.webp"
+  },
+  {
+    "id": 40,
+    "name": "Chain Necklace",
+    "slug": "chain-necklace",
+    "category": "necklaces",
+    "isBestseller": false,
+    "price": 140,
+    "description": "An elegant necklace with a timeless silhouette and sophisticated detailing. Perfect for elevating everyday and occasion looks.",
+    "image": "../assets/dummy-data/necklace10.webp"
+  },
+  {
+    "id": 41,
+    "name": "Om Pendant",
+    "slug": "om-pendant",
+    "category": "pendants",
+    "isBestseller": false,
+    "price": 95,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant1.webp"
+  },
+  {
+    "id": 42,
+    "name": "Ganesh Pendant",
+    "slug": "ganesh-pendant",
+    "category": "pendants",
+    "isBestseller": false,
+    "price": 120,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant2.webp"
+  },
+  {
+    "id": 43,
+    "name": "Cross Pendant",
+    "slug": "cross-pendant",
+    "category": "pendants",
+    "isBestseller": true,
+    "price": 85,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant3.webp"
+  },
+  {
+    "id": 44,
+    "name": "Leaf Pendant",
+    "slug": "leaf-pendant",
+    "category": "pendants",
+    "isBestseller": false,
+    "price": 75,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant4.webp"
+  },
+  {
+    "id": 45,
+    "name": "Infinity Pendant",
+    "slug": "infinity-pendant",
+    "category": "pendants",
+    "isBestseller": false,
+    "price": 110,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant5.webp"
+  },
+  {
+    "id": 46,
+    "name": "Lotus Pendant",
+    "slug": "lotus-pendant",
+    "category": "pendants",
+    "isBestseller": false,
+    "price": 95,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant6.webp"
+  },
+  {
+    "id": 47,
+    "name": "Star Pendant",
+    "slug": "star-pendant",
+    "category": "pendants",
+    "isBestseller": false,
+    "price": 90,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant7.webp"
+  },
+  {
+    "id": 48,
+    "name": "Heart Pendant",
+    "slug": "heart-pendant",
+    "category": "pendants",
+    "isBestseller": true,
+    "price": 130,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant8.webp"
+  },
+  {
+    "id": 49,
+    "name": "Tree Pendant",
+    "slug": "tree-pendant",
+    "category": "pendants",
+    "isBestseller": false,
+    "price": 120,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant9.webp"
+  },
+  {
+    "id": 50,
+    "name": "Evil Eye Pendant",
+    "slug": "evil-eye-pendant",
+    "category": "pendants",
+    "isBestseller": false,
+    "price": 85,
+    "description": "A delicate pendant designed to add a subtle touch of sparkle and character. A beautiful choice for everyday wear or gifting.",
+    "image": "../assets/dummy-data/pendant10.webp"
+  },
+  {
+    "id": 51,
+    "name": "Round Cut Diamond",
+    "slug": "round-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": true,
+    "price": 1200,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/earring2.webp"
+  },
+  {
+    "id": 52,
+    "name": "Princess Cut Diamond",
+    "slug": "princess-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": false,
+    "price": 980,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/earring3.webp"
+  },
+  {
+    "id": 53,
+    "name": "Emerald Cut Diamond",
+    "slug": "emerald-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": false,
+    "price": 1100,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/earring4.webp"
+  },
+  {
+    "id": 54,
+    "name": "Asscher Cut Diamond",
+    "slug": "asscher-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": false,
+    "price": 1050,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/earring5.webp"
+  },
+  {
+    "id": 55,
+    "name": "Cushion Cut Diamond",
+    "slug": "cushion-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": false,
+    "price": 990,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/earring6.webp"
+  },
+  {
+    "id": 56,
+    "name": "Marquise Cut Diamond",
+    "slug": "marquise-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": false,
+    "price": 1020,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/earring7.webp"
+  },
+  {
+    "id": 57,
+    "name": "Radiant Cut Diamond",
+    "slug": "radiant-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": false,
+    "price": 1080,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/earring8.webp"
+  },
+  {
+    "id": 58,
+    "name": "Oval Cut Diamond",
+    "slug": "oval-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": true,
+    "price": 1150,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/earring9.webp"
+  },
+  {
+    "id": 59,
+    "name": "Pear Cut Diamond",
+    "slug": "pear-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": false,
+    "price": 970,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/earring10.webp"
+  },
+  {
+    "id": 60,
+    "name": "Heart Cut Diamond",
+    "slug": "heart-cut-diamond",
+    "category": "diamonds",
+    "isBestseller": false,
+    "price": 1120,
+    "description": "Premium loose diamond with exceptional brilliance and clarity.",
+    "image": "../assets/dummy-data/pendant8.webp"
+  }
+]

@@ -10,12 +10,14 @@
     "db:migrate": "npm run db:migrate --prefix server",
     "db:migrate:dev": "npm run db:migrate:dev --prefix server",
     "db:seed": "npm run db:seed --prefix server",
+    "images:sync": "npm run images:sync --prefix server",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "isotope-layout": "^3.0.6",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.3",

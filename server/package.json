@@ -10,6 +10,7 @@
     "db:migrate:dev": "prisma migrate dev",
     "db:push": "prisma db push",
     "db:seed": "node seed.js",
+    "images:sync": "node scripts/sync-images-from-json.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "prisma": {

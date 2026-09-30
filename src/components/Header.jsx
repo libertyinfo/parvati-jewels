@@ -53,48 +53,48 @@ function Header({ setInquiryState }) {
 
           {/* Diamonds Dropdown */}
           <div className="relative group h-full flex items-center">
-            <Link to="#" className="hover:text-[#0C758C] transition-colors py-4">Diamonds</Link>
+            <Link to="/diamonds" className="hover:text-[#0C758C] transition-colors py-4">Diamonds</Link>
 
             <div className="absolute top-[100%] pt-2 left-1/2 -translate-x-1/2 w-[420px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
               <div className="bg-white shadow-[0_10px_40px_rgba(0,0,0,0.08)]">
                 <div className="grid grid-cols-2 gap-x-7 gap-y-6 p-5">
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Round" className="flex items-center gap-4 group/item">
                     <img src={roundDropdown} alt="Round" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Round</span>
                   </Link>
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Marquise" className="flex items-center gap-4 group/item">
                     <img src={marquiseDropdown} alt="Marquise" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Marquise</span>
                   </Link>
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Princess" className="flex items-center gap-4 group/item">
                     <img src={princessDropdown} alt="Princess" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Princess</span>
                   </Link>
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Radiant" className="flex items-center gap-4 group/item">
                     <img src={radiantDropdown} alt="Radiant" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Radiant</span>
                   </Link>
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Emerald" className="flex items-center gap-4 group/item">
                     <img src={emeraldDropdown} alt="Emerald" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Emerald</span>
                   </Link>
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Oval" className="flex items-center gap-4 group/item">
                     <img src={ovalDropdown} alt="Oval" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Oval</span>
                   </Link>
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Asscher" className="flex items-center gap-4 group/item">
                     <img src={asscherDropdown} alt="Asscher" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Asscher</span>
                   </Link>
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Pear" className="flex items-center gap-4 group/item">
                     <img src={pearDropdown} alt="Pear" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Pear</span>
                   </Link>
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Cushion" className="flex items-center gap-4 group/item">
                     <img src={cushionDropdown} alt="Cushion" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Cushion</span>
                   </Link>
-                  <Link to="#" className="flex items-center gap-4 group/item">
+                  <Link to="/diamonds?shape=Heart" className="flex items-center gap-4 group/item">
                     <img src={heartDropdown} alt="Heart" className="" />
                     <span className="text-[14px] text-[#1A1A1A] group-hover/item:text-[#0C758C] transition-colors">Heart</span>
                   </Link>
@@ -149,7 +149,7 @@ function Header({ setInquiryState }) {
           <Link to="/category/bracelets" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Bracelets</Link>
           <Link to="/category/necklace" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Necklaces</Link>
           <Link to="/category/pendant" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Pendant</Link>
-          <Link to="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Diamonds</Link>
+          <Link to="/diamonds" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Diamonds</Link>
           <Link to="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0C758C] transition-colors">Gifts</Link>
           <div className="flex flex-col space-y-3 pt-4 border-t border-gray-100">
             <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="border border-[#0C758C] text-[#0C758C] py-2 text-center font-medium hover:bg-[#0C758C] hover:text-white transition-colors">
