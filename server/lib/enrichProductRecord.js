@@ -49,6 +49,7 @@ function enrichProductRecord(item) {
     size: item.size != null ? String(item.size) : item.category === 'rings' ? String(6 + (id % 5)) : null,
     stock: item.stock != null ? Number(item.stock) : 20 + (id % 15),
     image: item.image,
+    additionalImages: item.additionalImages,
     specifications,
   };
 }

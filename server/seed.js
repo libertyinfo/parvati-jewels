@@ -135,6 +135,22 @@ async function upsertProduct(rawItem, categoryId) {
     },
   });
 
+  if (item.additionalImages && Array.isArray(item.additionalImages)) {
+    for (let i = 0; i < item.additionalImages.length; i++) {
+      const addImgRaw = { ...item, image: item.additionalImages[i] };
+      const addImgUrl = resolveProductImageUrl(addImgRaw);
+      await prisma.productImage.create({
+        data: {
+          productId: product.id,
+          imageUrl: addImgUrl,
+          sortOrder: i + 2,
+          isPrimary: false,
+          altText: `${item.name} - ${i + 2}`,
+        },
+      });
+    }
+  }
+
   const specifications = JSON.stringify(item.specifications);
 
   const variantPayload = {

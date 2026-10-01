@@ -193,7 +193,12 @@
       "dimensions": "5.6mm",
       "diamond_quality": "H/SI",
       "nickel_free": "Yes"
-    }
+    },
+    "additionalImages": [
+      "../assets/dummy-data/ring7(2nd).png",
+      "../assets/dummy-data/ring7(3rd).png",
+      "../assets/dummy-data/ring7(4th).png"
+    ]
   },
   {
     "id": 8,

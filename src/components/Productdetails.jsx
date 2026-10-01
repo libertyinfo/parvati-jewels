@@ -20,6 +20,7 @@ function Productdetails({ setInquiryState }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    setActiveIndex(0);
     setLoading(true);
     fetchJson(`/api/products/${slug}`)
       .then(data => {
@@ -59,7 +60,7 @@ function Productdetails({ setInquiryState }) {
               <img src={productImageUrl(images[activeIndex]?.imageUrl)} alt="Main product view" className="w-full h-full object-cover transition-opacity duration-500" />
             </div>
             
-            <div className="flex flex-wrap justify-between md:gap-3 gap-2 overflow-x-auto pb-2">
+            <div className="flex flex-wrap lg:gap-5 md:gap-3 gap-2 overflow-x-auto pb-2">
               {images.map((item, index) => (
                 <div 
                   key={index} 
