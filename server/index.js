@@ -13,7 +13,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Get all categories
 app.get('/api/categories', async (req, res) => {
   try {
     const categories = await prisma.category.findMany({
@@ -25,7 +24,6 @@ app.get('/api/categories', async (req, res) => {
   }
 });
 
-// Get all products (for listing page)
 app.get('/api/products', async (req, res) => {
   try {
     const { category } = req.query;
@@ -63,7 +61,6 @@ app.get('/api/products', async (req, res) => {
       }
     };
 
-    // Format products for listing
     const formattedProducts = products.map(product => {
       let minPrice = 0;
       let maxPrice = 0;
@@ -102,7 +99,6 @@ app.get('/api/products', async (req, res) => {
   }
 });
 
-// Get single product details
 app.get('/api/products/:slug', async (req, res) => {
   try {
     const { slug } = req.params;
@@ -127,7 +123,6 @@ app.get('/api/products/:slug', async (req, res) => {
   }
 });
 
-// Submit a new inquiry
 app.post('/api/inquiries', async (req, res) => {
   try {
     const { type, name, email, phone, metal, categories, message, productId } = req.body;
@@ -145,10 +140,16 @@ app.post('/api/inquiries', async (req, res) => {
       }
     });
 
-    let productDetails = '';
+    let productData = null;
     if (productId) {
-      const product = await prisma.product.findUnique({ where: { id: productId } });
-      if (product) productDetails = `\nProduct Inquired: ${product.name} (ID: ${product.id})`;
+      productData = await prisma.product.findUnique({
+        where: { id: productId },
+        include: {
+          category: true,
+          images: { where: { isPrimary: true }, take: 1 },
+          variants: true
+        }
+      });
     }
 
     const mailResult = await sendInquiryEmails({
@@ -159,7 +160,7 @@ app.post('/api/inquiries', async (req, res) => {
       metal,
       categories,
       message,
-      productDetails,
+      productData,
     });
 
     res.status(201).json({

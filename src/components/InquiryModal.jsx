@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
-import weddingMain from '../assets/ring-detail/wedding-main.png';
-import starIcon from '../assets/icons/star.svg';
-import { fetchJson } from '../lib/api';
-import { productImageUrl } from '../lib/productImage';
+import React, { useEffect, useRef, useState } from "react";
+import weddingMain from "../assets/ring-detail/wedding-main.png";
+import starIcon from "../assets/icons/star.svg";
+import { fetchJson } from "../lib/api";
+import { productImageUrl } from "../lib/productImage";
 
 const InquiryModal = ({ inquiryState, setInquiryState }) => {
   const { isOpen, type, product } = inquiryState || {
@@ -11,7 +11,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
     product: null,
   };
 
-  const [selectedMetal, setSelectedMetal] = useState('Silver');
+  const [selectedMetal, setSelectedMetal] = useState("Silver");
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -19,47 +19,40 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
 
   const categoryRef = useRef(null);
 
-
   const categories = [
-    'Rings',
-    'Earrings',
-    'Bracelet',
-    'Necklace',
-    'Mangalsutras',
-    'Pendants',
-    'Chains',
-    'Jewellery set',
+    "Rings",
+    "Earrings",
+    "Bracelet",
+    "Necklace",
+    "Mangalsutras",
+    "Pendants",
+    "Chains",
+    "Jewellery set",
   ];
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     };
   }, [isOpen]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        categoryRef.current &&
-        !categoryRef.current.contains(event.target)
-      ) {
+      if (categoryRef.current && !categoryRef.current.contains(event.target)) {
         setIsCategoryOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener(
-        'mousedown',
-        handleClickOutside
-      );
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -90,31 +83,31 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
     const formData = new FormData(e.target);
     const inquiryData = {
       type,
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      message: formData.get('message'),
-      metal: type === 'general' ? selectedMetal : null,
-      categories: type === 'general' ? selectedCategories : null,
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+      metal: type === "general" ? selectedMetal : null,
+      categories: type === "general" ? selectedCategories : null,
       productId: product?.id || null,
     };
 
     try {
-      const result = await fetchJson('/api/inquiries', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const result = await fetchJson("/api/inquiries", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(inquiryData),
       });
 
       setEmailNotice(
         result.emailSent === false
-          ? 'Your inquiry was saved. We could not send a confirmation email right now; our team will still follow up.'
+          ? "Your inquiry was saved. We could not send a confirmation email right now; our team will still follow up."
           : null,
       );
-      setInquiryState({ isOpen: true, type: 'success' });
+      setInquiryState({ isOpen: true, type: "success" });
     } catch (error) {
-      console.error('Error submitting inquiry:', error);
-      alert('Failed to submit inquiry. Please try again later.');
+      console.error("Error submitting inquiry:", error);
+      alert("Failed to submit inquiry. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
@@ -122,7 +115,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
 
   const getCategoryText = () => {
     if (selectedCategories.length === 0) {
-      return 'Select Category';
+      return "Select Category";
     }
 
     if (selectedCategories.length === 1) {
@@ -134,28 +127,23 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] ${isOpen
-        ? 'pointer-events-auto'
-        : 'pointer-events-none'
-        }`}
+      className={`fixed inset-0 z-[9999] ${
+        isOpen ? "pointer-events-auto" : "pointer-events-none"
+      }`}
     >
-
       <div
-        className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${isOpen
-          ? 'visible opacity-100'
-          : 'invisible opacity-0'
-          }`}
+        className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${
+          isOpen ? "visible opacity-100" : "invisible opacity-0"
+        }`}
         onClick={closeModal}
       ></div>
 
       <div
-        className={`absolute right-0 top-0 h-full transform overflow-y-auto bg-white transition-transform duration-300 xl:w-[520px] lg:w-[485px] max-w-full w-[445px] ${isOpen
-          ? 'translate-x-0'
-          : 'translate-x-full'
-          }`}
+        className={`absolute right-0 top-0 h-full transform overflow-y-auto bg-white transition-transform duration-300 xl:w-[520px] lg:w-[485px] max-w-full w-[445px] ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <div className="relative flex min-h-full flex-col md:p-8 p-6">
-
           <button
             type="button"
             onClick={closeModal}
@@ -182,19 +170,16 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
             INQUIRY
           </h2>
 
-          {type === 'success' && (
+          {type === "success" && (
             <div className="-mt-20 flex flex-1 flex-col items-center justify-center text-center">
-
               <h3 className="mb-2 text-[20px] font-medium text-[#1A1A1A]">
                 Thank you for your request.
               </h3>
 
               <p className="mb-16 text-[14px] font-light text-[#1A1A1A]">
-                We truly value your contribution and will
-                review it promptly.
+                We truly value your contribution and will review it promptly.
                 <br />
-                You can expect to hear back from us within
-                48 hours.
+                You can expect to hear back from us within 48 hours.
               </p>
 
               {emailNotice && (
@@ -213,12 +198,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
             </div>
           )}
 
-          {type === 'general' && (
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-1 flex-col"
-            >
-
+          {type === "general" && (
+            <form onSubmit={handleSubmit} className="flex flex-1 flex-col">
               <input
                 type="text"
                 name="name"
@@ -244,96 +225,78 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
               />
 
               <div className="mb-6">
-
                 <p className="mb-3 text-[15px] font-medium text-[#1A1A1A]">
-                  Metal:{' '}
+                  Metal:{" "}
                   <span className="font-light text-[#7A7A7A]">
                     {selectedMetal}
                   </span>
                 </p>
 
                 <div className="flex gap-4">
-
                   <button
                     type="button"
                     aria-label="Silver"
-                    onClick={() =>
-                      setSelectedMetal('Silver')
-                    }
-                    className={`h-6 w-6 cursor-pointer rounded-full bg-[#F1F1F1] transition-all duration-200 ${selectedMetal === 'Silver'
-                      ? 'ring-1 ring-[#000000] ring-offset-1'
-                      : ''
-                      }`}
+                    onClick={() => setSelectedMetal("Silver")}
+                    className={`h-6 w-6 cursor-pointer rounded-full bg-[#F1F1F1] transition-all duration-200 ${
+                      selectedMetal === "Silver"
+                        ? "ring-1 ring-[#000000] ring-offset-1"
+                        : ""
+                    }`}
                   />
 
                   <button
                     type="button"
                     aria-label="Gold"
-                    onClick={() =>
-                      setSelectedMetal('Gold')
-                    }
-                    className={`h-6 w-6 cursor-pointer rounded-full bg-[#E5D2A0] transition-all duration-200 ${selectedMetal === 'Gold'
-                      ? 'ring-1 ring-[#000000] ring-offset-1'
-                      : ''
-                      }`}
+                    onClick={() => setSelectedMetal("Gold")}
+                    className={`h-6 w-6 cursor-pointer rounded-full bg-[#E5D2A0] transition-all duration-200 ${
+                      selectedMetal === "Gold"
+                        ? "ring-1 ring-[#000000] ring-offset-1"
+                        : ""
+                    }`}
                   />
 
                   <button
                     type="button"
                     aria-label="Rose Gold"
-                    onClick={() =>
-                      setSelectedMetal('Rose Gold')
-                    }
-                    className={`h-6 w-6 cursor-pointer rounded-full bg-[#F3CDB8] transition-all duration-200 ${selectedMetal === 'Rose Gold'
-                      ? 'ring-1 ring-[#000000] ring-offset-1'
-                      : ''
-                      }`}
+                    onClick={() => setSelectedMetal("Rose Gold")}
+                    className={`h-6 w-6 cursor-pointer rounded-full bg-[#F3CDB8] transition-all duration-200 ${
+                      selectedMetal === "Rose Gold"
+                        ? "ring-1 ring-[#000000] ring-offset-1"
+                        : ""
+                    }`}
                   />
 
                   <button
                     type="button"
                     aria-label="Platinum"
-                    onClick={() =>
-                      setSelectedMetal('Platinum')
-                    }
-                    className={`h-6 w-6 cursor-pointer rounded-full border border-[#D0D5DD] bg-[#E9ECEC] transition-all duration-200 ${selectedMetal === 'Platinum'
-                      ? 'ring-1 ring-[#000000] ring-offset-1'
-                      : ''
-                      }`}
+                    onClick={() => setSelectedMetal("Platinum")}
+                    className={`h-6 w-6 cursor-pointer rounded-full border border-[#D0D5DD] bg-[#E9ECEC] transition-all duration-200 ${
+                      selectedMetal === "Platinum"
+                        ? "ring-1 ring-[#000000] ring-offset-1"
+                        : ""
+                    }`}
                   />
-
                 </div>
               </div>
 
-              <div
-                className="mb-6"
-                ref={categoryRef}
-              >
-
+              <div className="mb-6" ref={categoryRef}>
                 <p className="mb-3 text-[15px] font-medium text-[#1A1A1A]">
                   Product Category
                 </p>
 
                 <div className="relative">
-
                   <button
                     type="button"
-                    onClick={() =>
-                      setIsCategoryOpen(
-                        (prev) => !prev
-                      )
-                    }
-                    className={`flex h-[48px] w-full cursor-pointer items-center justify-between border bg-white px-4 text-left text-[14px] transition-colors focus:outline-none ${isCategoryOpen
-                      ? 'border-[#12798C]'
-                      : 'border-[#E5E5E5]'
-                      }`}
+                    onClick={() => setIsCategoryOpen((prev) => !prev)}
+                    className={`flex h-[48px] w-full cursor-pointer items-center justify-between border bg-white px-4 text-left text-[14px] transition-colors focus:outline-none ${
+                      isCategoryOpen ? "border-[#12798C]" : "border-[#E5E5E5]"
+                    }`}
                   >
-
                     <span
                       className={
                         selectedCategories.length > 0
-                          ? 'text-[#1A1A1A]'
-                          : 'text-[#7A7A7A]'
+                          ? "text-[#1A1A1A]"
+                          : "text-[#7A7A7A]"
                       }
                     >
                       {getCategoryText()}
@@ -345,10 +308,9 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                       viewBox="0 0 12 7"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className={`transition-transform duration-200 ${isCategoryOpen
-                        ? 'rotate-180'
-                        : ''
-                        }`}
+                      className={`transition-transform duration-200 ${
+                        isCategoryOpen ? "rotate-180" : ""
+                      }`}
                     >
                       <path
                         d="M1 1L6 6L11 1"
@@ -358,7 +320,6 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                         strokeLinejoin="round"
                       />
                     </svg>
-
                   </button>
 
                   {isCategoryOpen && (
@@ -377,13 +338,9 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                         max-h-[390px]
                       "
                     >
-
                       {categories.map((category) => {
-
                         const isSelected =
-                          selectedCategories.includes(
-                            category
-                          );
+                          selectedCategories.includes(category);
 
                         return (
                           <label
@@ -399,15 +356,10 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                               hover:bg-[#F8FAFA]
                             "
                           >
-
                             <input
                               type="checkbox"
                               checked={isSelected}
-                              onChange={() =>
-                                handleCategoryChange(
-                                  category
-                                )
-                              }
+                              onChange={() => handleCategoryChange(category)}
                               className="sr-only"
                             />
 
@@ -424,13 +376,13 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                                 border
                                 transition-all
                                 duration-200
-                                ${isSelected
-                                  ? 'border-[#12798C] bg-[#12798C]'
-                                  : 'border-[#1A1A1A] bg-white'
+                                ${
+                                  isSelected
+                                    ? "border-[#12798C] bg-[#12798C]"
+                                    : "border-[#1A1A1A] bg-white"
                                 }
                               `}
                             >
-
                               {isSelected && (
                                 <svg
                                   width="13"
@@ -447,28 +399,23 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                                   />
                                 </svg>
                               )}
-
                             </span>
                             <span
-                              className={`text-[15px] transition-colors ${isSelected
-                                ? 'text-[#12798C]'
-                                : 'text-[#4A4A4A]'
-                                }`}
+                              className={`text-[15px] transition-colors ${
+                                isSelected ? "text-[#12798C]" : "text-[#4A4A4A]"
+                              }`}
                             >
                               {category}
                             </span>
-
                           </label>
                         );
                       })}
-
                     </div>
                   )}
                 </div>
               </div>
 
               <div className="mb-8">
-
                 <p className="mb-3 text-[15px] font-medium text-[#1A1A1A]">
                   Customer Inquiry
                 </p>
@@ -479,7 +426,6 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                   rows="5"
                   className="w-full resize-none border border-[#E5E5E5] p-4 text-[14px] focus:border-[#12798C] focus:outline-none"
                 ></textarea>
-
               </div>
 
               <button
@@ -487,9 +433,8 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 disabled={isSubmitting}
                 className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C] disabled:bg-[#9C9C9C]"
               >
-                {isSubmitting ? 'Submitting...' : 'Submit'}
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
-
             </form>
           )}
 
@@ -497,74 +442,72 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
               PRODUCT INQUIRY
           ======================================== */}
 
-          {type === 'product' && (
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-1 flex-col"
-            >
-
+          {type === "product" && (
+            <form onSubmit={handleSubmit} className="flex flex-1 flex-col">
               <div className="lg:mb-8 mb-6 flex flex-col sm:flex-row gap-4 md:gap-6">
-
-                <div className="2xl:h-[200px] md:h-[185px] h-[150px] 2xl:w-[200px] md:w-[185px] w-[150px] flex-shrink-0 bg-[#F5F5F5] mx-auto sm:mx-0">
-
+                <div className="2xl:h-[195px] md:h-[185px] h-[150px] 2xl:w-[195px] md:w-[185px] w-[150px] flex-shrink-0 bg-[#F5F5F5] mx-auto sm:mx-0">
                   <img
-                    src={product?.images?.[0]?.imageUrl ? productImageUrl(product.images[0].imageUrl) : weddingMain}
+                    src={
+                      product?.images?.[0]?.imageUrl
+                        ? productImageUrl(product.images[0].imageUrl)
+                        : weddingMain
+                    }
                     alt="Product"
                     className="h-full w-full object-cover mix-blend-multiply"
                   />
-
                 </div>
 
                 <div className="flex flex-col text-center sm:text-left">
-
                   <h3 className="mb-3 font-bellefair text-[20px] sm:text-[24px] text-[#12798C] 2xl:text-[24px]">
-                    {product?.name || 'Wedding Ring 18K'}
+                    {product?.name || "Wedding Ring 18K"}
                   </h3>
 
-                  {product?.variants && product.variants.length > 0 && (() => {
-                    const minPrice = Math.min(...product.variants.map(v => v.price));
-                    const maxPrice = Math.max(...product.variants.map(v => v.price));
-                    return (
-                      <p className="2xl:mb-5 md:mb-6 mb-3 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
-                        ${minPrice.toFixed(2)} {maxPrice > minPrice ? `– $${maxPrice.toFixed(2)}` : ''}
-                      </p>
-                    );
-                  })()}
+                  {product?.variants &&
+                    product.variants.length > 0 &&
+                    (() => {
+                      const minPrice = Math.min(
+                        ...product.variants.map((v) => v.price),
+                      );
+                      const maxPrice = Math.max(
+                        ...product.variants.map((v) => v.price),
+                      );
+                      return (
+                        <p className="2xl:mb-5 md:mb-6 mb-3 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
+                          ${minPrice.toFixed(2)}{" "}
+                          {maxPrice > minPrice
+                            ? `– $${maxPrice.toFixed(2)}`
+                            : ""}
+                        </p>
+                      );
+                    })()}
 
-                  <p className="mb-1 text-[13px] text-[#1A1A1A] 2xl:text-[16px]">
+                  <p className="mb-2 text-[13px] text-[#1A1A1A] 2xl:text-[16px]">
                     Metal
                     <span className="ml-1 text-[14px] font-light text-[#7A7A7A]">
-                      {product?.material || '18K White Gold'}
+                      {product?.material || "18K White Gold"}
                     </span>
                   </p>
 
                   <p className="mb-4 text-[13px] text-[#1A1A1A] 2xl:text-[16px]">
                     Product Category
                     <span className="ml-1 text-[14px] font-light text-[#7A7A7A]">
-                      {product?.category?.name || 'Ring'}
+                      {product?.category?.name || "Ring"}
                     </span>
                   </p>
 
                   <div className="flex gap-1.5">
-
-                    {[1, 2, 3, 4, 5].map(
-                      (star) => (
-                        <img
-                          key={star}
-                          src={starIcon}
-                          alt="star"
-                          className={`h-[24px] w-[24px] ${star === 5
-                            ? 'grayscale opacity-30'
-                            : ''
-                            }`}
-                        />
-                      )
-                    )}
-
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <img
+                        key={star}
+                        src={starIcon}
+                        alt="star"
+                        className={`h-[24px] w-[24px] ${
+                          star === 5 ? "grayscale opacity-30" : ""
+                        }`}
+                      />
+                    ))}
                   </div>
-
                 </div>
-
               </div>
 
               <p className="2xl:mb-5 mb-3 text-[13px] font-light leading-[1.8] text-[#1A1A1A]">
@@ -605,12 +548,10 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 disabled={isSubmitting}
                 className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C] disabled:bg-[#9C9C9C]"
               >
-                {isSubmitting ? 'Submitting...' : 'Submit'}
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
-
             </form>
           )}
-
         </div>
       </div>
     </div>
