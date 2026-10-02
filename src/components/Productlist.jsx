@@ -50,7 +50,7 @@ function Productlist() {
   }
 
   return (
-    <div className='lg:pb-20 pb-10'>
+    <div className='xl:pb-6 lg:pb-10 pb-8'>
         {/* Hero */}
         <section className="relative 3xl:h-[350px] 2xl:h-[400px] xl:h-[380px] lg:h-[307px] md:h-[240px] h-[200px] flex items-center overflow-hidden bg-[#227b8e]">
           <div className="absolute right-[8%] top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
@@ -60,9 +60,9 @@ function Productlist() {
           <div className="absolute inset-0 bg-black/40 md:hidden z-[5]"></div>
           <div className="container mx-auto px-6 z-10 relative">
             <div className="flex">
-              <ScrollReveal animation="fade-right" duration={900} className="w-full md:w-1/2 flex flex-col items-center md:items-start text-white mt-4 md:mt-0 text-center md:text-left relative z-10">
+              <ScrollReveal animation="fade-right" duration={900} className="w-full md:w-1/2 flex flex-col items-center text-white mt-4 md:mt-0 text-center md:text-left relative z-10">
                 <p className="xl:text-[28px] lg:text-[24px] md:text-[20px] 3xl:text-[26px] text-[16px] lg:mb-7 mb-3 uppercase drop-shadow-md">Its time to show off your</p>
-                <h1 className="font-bellefair text-[40px] md:text-[50px] lg:text-[54px] xl:text-[64px] 2xl:text-[92px] 3xl:text-[88px] leading-[100%] mb-4 md:mb-7 drop-shadow-lg">
+                <h1 className="font-bellefair text-[40px] md:text-[50px] lg:text-[54px] xl:text-[64px] 2xl:text-[92px] 3xl:text-[88px] leading-[100%] mb-4 md:mb-7 3xl:mb-0 drop-shadow-lg">
                   {currentCategory.title}
                 </h1>
               </ScrollReveal>
@@ -78,7 +78,7 @@ function Productlist() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12">
             {products.map((product, index) => (
               <ScrollReveal 
                 key={product.id} 
@@ -88,7 +88,7 @@ function Productlist() {
               >
                 <Link to={`/products/${product.slug}`} className="relative w-full flex items-center justify-center mb-5 overflow-hidden group">
                   {product.isBestseller && (
-                    <div className="absolute top-4 lg:left-0 md:left-[1%] left-[0%] z-10">
+                    <div className="absolute top-4 left-0 z-10">
                       <img src={bestsellerTag} alt="bestsellerTag" />
                     </div>
                   )}

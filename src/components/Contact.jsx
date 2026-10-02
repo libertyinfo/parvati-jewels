@@ -19,8 +19,8 @@ function Contact() {
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="flex">
                         <ScrollReveal animation="fade-right" duration={900} className="w-full md:w-1/2 flex flex-col items-center text-white mt-12 md:mt-0 relative z-10">
-                            <p className="2xl:text-[28px] xl:text-[26px] md:text-[20px] text-[18px] 3xl:text-[26px] 2xl:mb-7 mb-5 uppercase drop-shadow-md text-center">Let us know what you have in mind</p>
-                            <h1 className="font-bellefair text-[42px] md:text-[50px] xl:text-[62px] 2xl:text-[92px] 3xl:text-[88px] leading-[100%] 2xl:mb-7 mb-5 text-center drop-shadow-lg">
+                            <p className="2xl:text-[28px] xl:text-[26px] text-[17px] 3xl:text-[26px] 2xl:mb-7 md:mb-5 mb-3 uppercase drop-shadow-md text-center">Let us know what you have in mind</p>
+                            <h1 className="font-bellefair text-[40px] md:text-[50px] xl:text-[62px] 2xl:text-[92px] 3xl:text-[88px] leading-[100%] 2xl:mb-7 md:mb-5 mb-10 text-center drop-shadow-lg">
                                 CONTACT
                             </h1>
                         </ScrollReveal>
@@ -36,10 +36,10 @@ function Contact() {
                     </div>
                 </ScrollReveal>
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:mb-24 mb-20'>
-                    <ScrollReveal animation="fade-up" delay={0} className="flex flex-col items-center justify-center xl:py-10 py-8 xl:px-8 px-6 bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)] transition-transform hover:-translate-y-1 duration-300">
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:mb-24 md:mb-20 mb-15'>
+                    <ScrollReveal animation="fade-up" delay={0} className="flex flex-col items-center justify-center xl:py-10 md:py-8 py-6 xl:px-8 px-6 bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)] transition-transform hover:-translate-y-1 duration-300">
                         <div className="mb-5">
-                            <img src={phoneCall} alt="phoneCall" className='xl:w-[68px] xl:h-[68px] w-[55px] h-[55px]' />
+                            <img src={phoneCall} alt="phoneCall" className='xl:w-[68px] xl:h-[68px] md:w-[55px] md:h-[55px] w-[50px] h-[50px]' />
                         </div>
                         <h3 className="text-[18px] 2xl:text-[24px] font-medium text-[#1A1A1A] mb-3">+91 92345 96789</h3>
                         <p className="text-[14px] 2xl:text-[16px] text-[#1A1A1A] text-center font-light max-w-[364px]">
@@ -49,7 +49,7 @@ function Contact() {
 
                     <ScrollReveal animation="fade-up" delay={150} className="flex flex-col items-center justify-center xl:py-10 py-8 xl:px-8 px-6 bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)] transition-transform hover:-translate-y-1 duration-300">
                         <div className="mb-5">
-                            <img src={whatsApp} alt="whatsApp" className='xl:w-[68px] xl:h-[68px] w-[55px] h-[55px]' />
+                            <img src={whatsApp} alt="whatsApp" className='xl:w-[68px] xl:h-[68px] md:w-[55px] md:h-[55px] w-[50px] h-[50px]' />
                         </div>
                         <h3 className="text-[18px] 2xl:text-[24px] font-medium text-[#1A1A1A] mb-3">WhatsApp Us</h3>
                         <p className="text-[14px] 2xl:text-[16px] text-[#1A1A1A] text-center font-light max-w-[364px]">
@@ -59,7 +59,7 @@ function Contact() {
 
                     <ScrollReveal animation="fade-up" delay={300} className="flex flex-col items-center justify-center xl:py-10 py-8 xl:px-8 px-6 bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)] transition-transform hover:-translate-y-1 duration-300">
                         <div className="mb-5">
-                           <img src={mail} alt="mail" className='xl:w-[68px] xl:h-[68px] w-[55px] h-[55px]' />
+                           <img src={mail} alt="mail" className='xl:w-[68px] xl:h-[68px] md:w-[55px] md:h-[55px] w-[50px] h-[50px]' />
                         </div>
                         <h3 className="text-[18px] 2xl:text-[24px] font-medium text-[#1A1A1A] mb-3">support@parvati.com</h3>
                         <p className="text-[14px] 2xl:text-[16px] text-[#1A1A1A] text-center font-light max-w-[364px]">

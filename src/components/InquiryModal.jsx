@@ -143,7 +143,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="relative flex min-h-full flex-col md:p-8 p-6">
+        <div className="relative flex min-h-full flex-col lg:p-8 p-6">
           <button
             type="button"
             onClick={closeModal}
@@ -166,7 +166,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
             </svg>
           </button>
 
-          <h2 className="lg:mb-10 mb-8 font-bellefair text-[32px] uppercase tracking-wide text-[#12798C]">
+          <h2 className="xl:mb-10 lg:mb-6 mb-3 font-bellefair text-[32px] uppercase tracking-wide text-[#12798C]">
             INQUIRY
           </h2>
 
@@ -205,7 +205,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="name"
                 placeholder="Name"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -213,7 +213,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="email"
                 placeholder="Email"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -221,7 +221,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="phone"
                 placeholder="Phone Number"
                 required
-                className="mb-8 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="lg:mb-8 mb-6 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <div className="mb-6">
@@ -415,7 +415,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 </div>
               </div>
 
-              <div className="mb-8">
+              <div className="lg:mb-8 mb-6">
                 <p className="mb-3 text-[15px] font-medium text-[#1A1A1A]">
                   Customer Inquiry
                 </p>
@@ -458,7 +458,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 </div>
 
                 <div className="flex flex-col text-center sm:text-left">
-                  <h3 className="mb-3 font-bellefair text-[20px] sm:text-[24px] text-[#12798C] 2xl:text-[24px]">
+                  <h3 className="lg:mb-3 mb-2 font-bellefair text-[20px] sm:text-[24px] text-[#12798C] 2xl:text-[24px]">
                     {product?.name || "Wedding Ring 18K"}
                   </h3>
 
@@ -472,7 +472,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                         ...product.variants.map((v) => v.price),
                       );
                       return (
-                        <p className="2xl:mb-5 md:mb-6 mb-3 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
+                        <p className="2xl:mb-5 lg:mb-6 mb-3 text-[16px] font-medium text-[#1A1A1A] 2xl:text-[18px]">
                           ${minPrice.toFixed(2)}{" "}
                           {maxPrice > minPrice
                             ? `– $${maxPrice.toFixed(2)}`
@@ -501,7 +501,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                         key={star}
                         src={starIcon}
                         alt="star"
-                        className={`h-[24px] w-[24px] ${
+                        className={`lg:h-[24px] h-[22px] lg:w-[24px] w-[22px] ${
                           star === 5 ? "grayscale opacity-30" : ""
                         }`}
                       />
@@ -524,7 +524,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="name"
                 placeholder="Name"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -532,7 +532,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="email"
                 placeholder="Email"
                 required
-                className="mb-4 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <input
@@ -540,7 +540,7 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="phone"
                 placeholder="Phone Number"
                 required
-                className="mb-8 w-full border border-[#E5E5E5] md:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-8 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
 
               <button

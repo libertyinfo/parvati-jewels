@@ -3,7 +3,7 @@ import ScrollReveal from './ScrollReveal'
 
 function CTA() {
   return (
-    <section className="xl:mt-24 3xl:mt-15 2xl:my-20 md:my-16 my-10 text-center">
+    <section className="xl:mt-24 3xl:mt-15 2xl:my-20 lg:my-12 my-8 text-center">
       <div className="container mx-auto px-6">
         <ScrollReveal animation="fade-up" delay={0}>
           <h2 className="font-bellefair text-[#1A1A1A] text-[26px] md:text-[40px] xl:text-[48px] mb-2 uppercase">LET’S GET IN TOUCH</h2>

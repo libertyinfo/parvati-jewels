@@ -102,7 +102,7 @@ function Diamond() {
           animation="fade-left"
           duration={900}
           delay={150}
-          className="absolute z-0 w-[336px] md:w-[361px] lg:w-[462px] xl:w-[580px] 2xl:w-[672px] 3xl:w-[37%] right-[2%] xl:right-[5%] 2xl:right-[12%] 3xl:right-[6%] opacity-40 md:opacity-100"
+          className="absolute z-0 w-[336px] md:w-[404px] lg:w-[462px] xl:w-[580px] 2xl:w-[672px] 3xl:w-[42%] right-[2%] xl:right-[5%] 2xl:right-[12%] 3xl:right-[6%] opacity-40 md:opacity-100"
         >
           <img src={diamondHero} alt="diamondHero" />
         </ScrollReveal>
@@ -137,7 +137,7 @@ function Diamond() {
           </ScrollReveal>
 
           <ScrollReveal animation="fade-left" duration={900} className="w-full justify-end flex items-center">
-            <div ref={scrollRef} className="flex flex-wrap md:gap-4 gap-2 pb-2 sm:pb-0 scroll-smooth" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            <div ref={scrollRef} className="flex flex-wrap lg:gap-4 gap-2 pb-2 sm:pb-0 scroll-smooth" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               <style>{`
                 .flex::-webkit-scrollbar { display: none; }
               `}</style>
@@ -153,7 +153,7 @@ function Diamond() {
                     }
                     e.target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                   }}
-                  className={`text-[10px] md:text-[14px] uppercase transition-colors flex-shrink-0 cursor-pointer ${activeShape === shape ? 'text-white font-semibold bg-[#0C758C] p-2 rounded-full' : 'text-[#0C758C] hover:bg-[#0C758C] hover:text-white border border-[#0C758C] px-2 py-1 rounded-full'}`}
+                  className={`text-[12px] lg:text-[14px] uppercase transition-colors flex-shrink-0 cursor-pointer ${activeShape === shape ? 'text-white font-semibold bg-[#0C758C] p-2 rounded-full' : 'text-[#0C758C] hover:bg-[#0C758C] hover:text-white border border-[#0C758C] px-2 py-1 rounded-full'}`}
                 >
                   {shape}
                 </button>
@@ -179,12 +179,12 @@ function Diamond() {
               return (
                 <div
                   key={product.id}
-                  className={`diamond-grid-item float-left w-1/2 md:w-1/4 px-2 md:px-3 mb-8 md:mb-10 flex flex-col ${shapeClasses}`}
+                  className={`diamond-grid-item float-left w-full lg:w-1/3 xl:w-1/4 px-2 md:px-3 mb-8 md:mb-10 flex flex-col ${shapeClasses}`}
                 >
                   <Link to={`/products/${product.slug}`} className="relative w-full flex items-center justify-center mb-5 overflow-hidden group">
                     {product.isBestseller && (
                       <div className="absolute top-4 lg:left-0 md:left-[1%] left-[0%] z-10">
-                        <img src={bestsellerTag} alt="bestsellerTag" className="w-[70px] lg:w-auto h-auto" />
+                        <img src={bestsellerTag} alt="bestsellerTag" className="md:w-[70px] w-[119px] lg:w-auto h-auto" />
                       </div>
                     )}
                     {product.primaryImage ? (

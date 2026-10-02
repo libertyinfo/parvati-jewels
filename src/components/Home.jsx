@@ -68,7 +68,7 @@ function Home({ setInquiryState }) {
   };
 
   return (
-    <div className="w-full flex flex-col md:pb-20 pb-8">
+    <div className="w-full flex flex-col lg:pb-16 pb-8 3xl:pb-8">
       {/* Hero */}
       <section className="relative 3xl:h-[745px] 2xl:h-[794px] xl:h-[675px] lg:h-[498px] h-[365px] flex items-center overflow-hidden bg-[#227b8e]">
         <div className="absolute left-0 top-0 z-0 h-full w-[40%] bg-[#AAD1D8] blur-[100px]"></div>
@@ -256,7 +256,7 @@ function Home({ setInquiryState }) {
       </section>
 
       {/* Explore Diamonds */}
-      <section className="bg-[#FFF8EF] md:mt-24 mt-20 xl:py-[100px] md:py-[70px] py-[40px]">
+      <section className="bg-[#FFF8EF] lg:mt-24 mt-20 xl:py-[100px] lg:py-[50px] md:py-[40px] py-[20px]">
         <div className="container mx-auto px-6 text-center">
           <ScrollReveal animation="fade-up">
             <h2 className="font-bellefair text-[#1A1A1A] text-[26px] md:text-[40px] xl:text-[48px] mb-2 uppercase">
@@ -297,7 +297,7 @@ function Home({ setInquiryState }) {
       </section>
 
       {/* Most Popular */}
-      <section className="xl:mt-24 md:mt-20 mt-10 w-full overflow-hidden">
+      <section className="xl:mt-24 lg:mt-16 md:mt-14 mt-10 w-full overflow-hidden">
         <div className="container mx-auto px-6 text-center">
           <ScrollReveal animation="fade-up">
             <h2 className="font-bellefair text-[#0C758C] text-[26px] md:text-[40px] xl:text-[48px] mb-2 uppercase">

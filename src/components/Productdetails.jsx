@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import CTA from "./CTA";
 import ScrollReveal from './ScrollReveal';
@@ -18,6 +18,14 @@ function Productdetails({ setInquiryState }) {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const scrollRef = useRef(null);
+
+  const scrollThumbnails = (direction) => {
+    if (scrollRef.current) {
+      const scrollAmount = 200;
+      scrollRef.current.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     setActiveIndex(0);
@@ -52,29 +60,58 @@ function Productdetails({ setInquiryState }) {
   return (
     <div>
         {/* Hero Section */}
-        <div className="container mx-auto px-6 2xl:py-14 md:py-10 py-5">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
+        <div className="container mx-auto px-6 2xl:py-14 py-5">
+        <div className="flex flex-col lg:flex-row gap-8">
           
           <ScrollReveal animation="fade-up" duration={900} delay={150} className="2xl:w-[785px] xl:w-[785px] lg:w-[765px] md:w-[720px] w-full flex flex-col">
-            <div className="w-full 2xl:h-[600px] xl:h-[655px] h-[260px] md:h-[595px] flex items-center justify-center overflow-hidden md:mb-8 mb-5">
+            <div className="w-full 2xl:h-[600px] xl:h-[655px] lg:h-[465px] md:h-[495px] h-[260px] flex items-center justify-center overflow-hidden md:mb-8 mb-5">
               <img src={productImageUrl(images[activeIndex]?.imageUrl)} alt="Main product view" className="w-full h-full object-cover transition-opacity duration-500" />
             </div>
             
-            <div className="flex flex-wrap lg:gap-5 md:gap-3 gap-2 overflow-x-auto pb-2">
-              {images.map((item, index) => (
-                <div 
-                  key={index} 
-                  className={`md:w-[15%] w-[20%] cursor-pointer transition-all duration-300 border ${activeIndex === index ? 'border-[#3D3D3D] shadow-sm' : 'border-transparent hover:border-gray-300'}`}
-                  onClick={() => setActiveIndex(index)}
+            <div className="relative flex items-center group">
+              {images.length > 5 && (
+                <button 
+                  onClick={() => scrollThumbnails('left')}
+                  className="absolute left-0 z-10 bg-white/90 hover:bg-white shadow-md p-1.5 rounded-full -ml-3 flex items-center justify-center text-gray-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-gray-100"
                 >
-                  <img src={productImageUrl(item.imageUrl)} alt={`Thumbnail ${index + 1}`} className="w-full 2xl:h-[134px] xl:h-[110px] md:h-[90px] h-[56px] object-cover" />
-                </div>
-              ))}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+              )}
+              
+              <div 
+                ref={scrollRef}
+                className="flex lg:gap-5 md:gap-3 gap-2 overflow-x-auto pb-2 scroll-smooth w-full"
+                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              >
+                <style>{`.overflow-x-auto::-webkit-scrollbar { display: none; }`}</style>
+                {images.map((item, index) => (
+                  <div 
+                    key={index} 
+                    className={`flex-shrink-0 xl:w-[15%] lg:w-[18%] w-[16%] cursor-pointer transition-all duration-300 border ${activeIndex === index ? 'border-[#3D3D3D] shadow-sm' : 'border-transparent hover:border-gray-300'}`}
+                    onClick={() => setActiveIndex(index)}
+                  >
+                    <img src={productImageUrl(item.imageUrl)} alt={`Thumbnail ${index + 1}`} className="w-full 2xl:h-[134px] xl:h-[110px] md:h-[105px] h-[56px] object-cover" />
+                  </div>
+                ))}
+              </div>
+
+              {images.length > 5 && (
+                <button 
+                  onClick={() => scrollThumbnails('right')}
+                  className="absolute right-0 z-10 bg-white/90 hover:bg-white shadow-md p-1.5 rounded-full -mr-3 flex items-center justify-center text-gray-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-gray-100"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              )}
             </div>
           </ScrollReveal>
 
           <ScrollReveal animation="fade-up" duration={900} delay={150} className="w-full lg:w-[582px] flex flex-col">
-            <div className="text-[11px] 2xl:text-[16px] md:text-[13px] text-[#7A7A7A] 2xl:mb-9 xl:mb-7 mb-5 uppercase font-medium">
+            <div className="text-[11px] 2xl:text-[16px] md:text-[13px] text-[#7A7A7A] 2xl:mb-9 xl:mb-7 lg:mb-3 mb-5 uppercase font-medium">
               <Link to="/" className="hover:text-black transition-colors">HOME</Link> 
               <span className="mx-3 text-gray-300">|</span> 
               <Link to={`/category/${product.category?.slug || 'rings'}`} className="hover:text-black transition-colors">{product.category?.name?.toUpperCase() || 'CATEGORY'}</Link>
