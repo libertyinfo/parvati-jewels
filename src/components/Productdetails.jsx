@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import CTA from "./CTA";
 import ScrollReveal from './ScrollReveal';
 import starIcon from '../assets/icons/star.svg';
@@ -14,6 +14,7 @@ import {
        
 function Productdetails({ setInquiryState }) {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState(0);
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -64,6 +65,15 @@ function Productdetails({ setInquiryState }) {
         <div className="flex flex-col lg:flex-row gap-8">
           
           <ScrollReveal animation="fade-up" duration={900} delay={150} className="2xl:w-[785px] xl:w-[785px] lg:w-[765px] md:w-[720px] w-full flex flex-col">
+            <button 
+              onClick={() => navigate(-1)}
+              className="flex items-center gap-1 text-black hover:text-[#12798C] transition-colors duration-300 w-fit mb-3 group cursor-pointer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              <span className="text-[11px] md:text-[13px] 2xl:text-[16px] uppercase font-medium tracking-wide">BACK</span>
+            </button>
             <div className="w-full 2xl:h-[600px] xl:h-[655px] lg:h-[465px] md:h-[495px] h-[260px] flex items-center justify-center overflow-hidden md:mb-8 mb-5">
               <img src={productImageUrl(images[activeIndex]?.imageUrl)} alt="Main product view" className="w-full h-full object-cover transition-opacity duration-500" />
             </div>
